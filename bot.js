@@ -19,7 +19,7 @@ bot.on("message", (msg) => {
         .setAuthor("Boss Timer ThBDO", "https://www.picz.in.th/images/2018/06/22/48XhJt.png")  //icon หัวขอ
         .setColor(0x112263)   //ใส่สี
         .setDescription("วัน  "+thtime().days+"   เวลา   "+"__"+chkboss().t+"__"+"              "+"__**"+chkboss().boss+"**__")   //รายละเอียด
-        .setFooter("Boss Timer ThBDO V3.0.1 by ฟูโอ้", "https://cdn.pixabay.com/photo/2017/08/27/22/02/pig-2687704_960_720.png") //รูป ข้อความล่างสุด
+        .setFooter("Boss Timer ThBDO "+botconfig.version+" by ฟูโอ้", "https://cdn.pixabay.com/photo/2017/08/27/22/02/pig-2687704_960_720.png") //รูป ข้อความล่างสุด
         .setImage("https://www.picz.in.th/images/2018/06/22/489tfS.png")     //รูปใหญ่
         .setThumbnail(chkboss().imgboss)   //รูปเล็กขวาบน
         .setTimestamp()  //เวลาด้านล่างสุด
