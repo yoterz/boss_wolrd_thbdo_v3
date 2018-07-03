@@ -6,8 +6,8 @@ var bot = new Discord.Client()
 var channelName = botconfig.channelName
 bot.on("ready",function(){
     console.log("Ready")
-    console.log(chkboss())
-    console.log(channelName)
+    //console.log(chkboss())
+    //console.log(channelName)
 })
 
 setInterval(()=>status(), 30000);
@@ -37,5 +37,4 @@ function status(){
     bot.user.setGame('NEXT '+chkboss().t+' '+chkboss().boss)
 }
    
-//bot.login('NDYxMDQ2ODAxNjIyMTA2MTIy.DhNm0Q.G9r_AaExDoTVzprAtohxYF12I1Y')
 bot.login(process.env.BOT_TOKEN)
