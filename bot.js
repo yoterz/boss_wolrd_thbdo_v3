@@ -1,5 +1,5 @@
 const Discord = require("discord.js")
-const timestart = require("./thtime")
+const thtime = require("./thtime")
 const chkboss = require("./chkboss")
 const botconfig = require("./botconfig")
 var bot = new Discord.Client()
@@ -18,7 +18,7 @@ bot.on("message", (msg) => {
         .setTitle("บอสตัวต่อไป")  //หัวข้อ
         .setAuthor("Boss Timer BDO", "https://www.picz.in.th/images/2018/06/22/48XhJt.png")  //icon หัวขอ
         .setColor(0x112263)   //ใส่สี
-        .setDescription("วัน  "+timestart().days+"   เวลา   "+"__"+chkboss().t+"__"+"              "+"__**"+chkboss().boss+"**__")   //รายละเอียด
+        .setDescription("วัน  "+thtime().days+"   เวลา   "+"__"+chkboss().t+"__"+"              "+"__**"+chkboss().boss+"**__")   //รายละเอียด
         .setFooter("Boss Timer BDO V3.0 by ฟูโอ้", "https://cdn.pixabay.com/photo/2017/08/27/22/02/pig-2687704_960_720.png") //รูป ข้อความล่างสุด
         .setImage("https://www.picz.in.th/images/2018/06/22/489tfS.png")     //รูปใหญ่
         .setThumbnail(chkboss().imgboss)   //รูปเล็กขวาบน
