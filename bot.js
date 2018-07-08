@@ -10,7 +10,7 @@ bot.on("ready",function(){
     //console.log(channelName)
 })
 
-setInterval(()=>status(), 30000);
+setInterval(()=>status(), 60000);
 
 bot.on("message", (msg) => {
     if (msg.content === "บอส"){
@@ -88,7 +88,7 @@ function alertz() {
     }
   }
         
-   if (h == 23 && m == 45) {
+   if (h == 23 && m == 51) {
     var channel = bot.channels.find("name", channelName)
     if (channel) {
       channel.sendMessage('@everyone Test Message to Channel '+channelName+' '+h+':'+m)
