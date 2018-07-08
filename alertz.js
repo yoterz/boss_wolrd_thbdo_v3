@@ -52,7 +52,7 @@ module.exports = function() {
   }
     
     
-   if (h == 23 && m == 19) {
+   if (h == 23 && m == 24) {
     var channel = bot.channels.find("name", channelName)
     if (channel) {
       channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
