@@ -33,7 +33,8 @@ bot.on("message", (msg) => {
          if (!channel) {
              console.log('create Channel boss-notifications')
              msg.guild.createChannel(channelName, 'text')   //สร้างห้องง
-             msg.channel.send('```' + 'สร้างห้อง ' + channelName + ' เรียบร้อย' + '```')
+             msg.channel.send('```' + 'สร้างห้อง ' + channelName + ' เรียบร้อย  และ ทดลองส่งข้อความไปที่ห้อง' + '```')
+             channel.sendMessage('@everyone test message to channel : '+channelName)
         }
     }
 
@@ -97,17 +98,7 @@ function alertz() {
       channel.sendMessage('```-Create Channel-```')
     }
   }
-        
-   if (h == 0 && m == 10) {
-    var channel = bot.channels.find("name", channelName)
-    if (channel) {
-      channel.sendMessage('@everyone Test Message to Channel '+channelName+' '+h+':'+m)
-    } else {
-      var channel = bot.channels.find("name", 'general')
-      channel.sendMessage('```-Create Channel-```')
-    }
-  }
-    
+
 }
 
 bot.login(process.env.BOT_TOKEN)
