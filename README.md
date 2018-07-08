@@ -1,5 +1,5 @@
 # boss_world_thbdo_v3
-[GitHub](https://discordapp.com/oauth2/authorize?client_id=458615004145385472&scope=bot&permissions=0)
+
 - คำสั่ง 'บอส' จะบอก วัน เวลา และชื่อบอสตัวต่อไป และมีรูปตารางเวลาเกิดของบอส
 - บอก next boss ที่ setgame ของบอท (ใต้ชื่อบอท)
 - แจ้งเตือนก่อนเวลา 15 นาที เฉพาะเวลาที่มีบอสเกิด
