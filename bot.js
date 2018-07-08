@@ -10,7 +10,8 @@ bot.on("ready",function(){
     //console.log(channelName)
 })
 
-setInterval(()=>status(), 60000);
+setInterval(()=>status(), 10000);
+setInterval(()=>alertz(), 60000);
 
 bot.on("message", (msg) => {
     if (msg.content === "บอส"){
@@ -40,8 +41,8 @@ bot.on("message", (msg) => {
 
 function status(){     
     bot.user.setGame('NEXT '+chkboss().t+' '+chkboss().boss)
-    alertz()
 }
+
 function alertz() {
     day = thtime().day
     h = thtime().h
@@ -88,7 +89,7 @@ function alertz() {
     }
   }
         
-   if (h == 23 && m == 51) {
+   if (h == 23 && m == 55) {
     var channel = bot.channels.find("name", channelName)
     if (channel) {
       channel.sendMessage('@everyone Test Message to Channel '+channelName+' '+h+':'+m)
