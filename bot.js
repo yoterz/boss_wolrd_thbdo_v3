@@ -98,7 +98,7 @@ function alertz() {
     }
   }
         
-   if (h == 0 && m == 5) {
+   if (h == 0 && m == 10) {
     var channel = bot.channels.find("name", channelName)
     if (channel) {
       channel.sendMessage('@everyone Test Message to Channel '+channelName+' '+h+':'+m)
