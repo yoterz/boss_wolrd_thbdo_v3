@@ -10,7 +10,7 @@ bot.on("ready",function(){
     //console.log(channelName)
 })
 
-setInterval(()=>status(), 20000);
+setInterval(()=>status(), 10000);
 setInterval(()=>alertz(), 60000);
 
 bot.on("message", (msg) => {
