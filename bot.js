@@ -32,11 +32,8 @@ bot.on("message", (msg) => {
         var channel = bot.channels.find("name", channelName)
          if (!channel) {
              msg.guild.createChannel(channelName, 'text')   //สร้างห้องง
-             msg.channel.send('```' + 'สร้างห้อง ' + channelName + ' เรียบร้อย  และ ทดลองส่งข้อความไปที่ห้อง' + '```')
-             
-             var channel = bot.channels.find("name", channelName)
-             channel.sendMessage('@everyone test message to channel : '+channelName)
-        }
+             msg.channel.send('```' + 'สร้างห้อง ' + channelName + ' เรียบร้อย' + '```')
+         }
     }
 
 })
