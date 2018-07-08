@@ -3,6 +3,7 @@ const thtime = require("./thtime")
 const chkboss = require("./chkboss")
 const botconfig = require("./botconfig")
 var bot = new Discord.Client()
+var channelName = botconfig.channelName
 
 module.exports = function() {
     day = thtime().day
@@ -11,7 +12,7 @@ module.exports = function() {
     
   if (day == 2 || day == 3 || day == 6) {
     if (h == 23 && m == 45) {
-      var channel = bot.channels.find("name", botconfig.channelName)
+      var channel = bot.channels.find("name", channelName)
       if (channel) {
         channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
       } else {
@@ -22,7 +23,7 @@ module.exports = function() {
   }
   if (day == 0 || day == 1 || day == 4 || day == 5) {
     if (h == 9 && m == 45) {
-      var channel = bot.channels.find("name", botconfig.channelName)
+      var channel = bot.channels.find("name", channelName)
       if (channel) {
         channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
       } else {
@@ -32,7 +33,7 @@ module.exports = function() {
     }
   }
   if (h == 13 && m == 45) {
-    var channel = bot.channels.find("name", botconfig.channelName)
+    var channel = bot.channels.find("name", channelName)
     if (channel) {
       channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
     } else {
@@ -41,7 +42,7 @@ module.exports = function() {
     }
   }
   if (h == 17 && m == 45) {
-    var channel = bot.channels.find("name", botconfig.channelName)
+    var channel = bot.channels.find("name", channelName)
     if (channel) {
       channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
     } else {
@@ -52,7 +53,7 @@ module.exports = function() {
     
     
    if (h == 23 && m == 19) {
-    var channel = bot.channels.find("name", botconfig.channelName)
+    var channel = bot.channels.find("name", channelName)
     if (channel) {
       channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
     } else {
