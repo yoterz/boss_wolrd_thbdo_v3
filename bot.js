@@ -82,9 +82,9 @@ function alertz() {
       channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
   }
  
-  if (h == 0 && m == 56) {  //เทสส่ง msg
+ /* if (h == 0 && m == 56) {  //เทสส่ง msg
       channel.sendMessage('@everyone test message to channel : '+channelName+' / Next boss : '+chkboss().boss)
-  } //จบ เทส
+  } //จบ เทส*/
     
 }
 
