@@ -1,5 +1,6 @@
 const Discord = require("discord.js")
 const thtime = require("./thtime")
+const chkboss = require("./chkboss")
 const botconfig = require("./botconfig")
 var bot = new Discord.Client()
 
