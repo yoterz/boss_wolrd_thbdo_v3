@@ -41,6 +41,17 @@ bot.on("message", (msg) => {
 
 function status(){     
     bot.user.setGame('NEXT '+chkboss().t+' '+chkboss().boss)
+    chkchannel()
+}
+
+function chkchannel(){
+      var channel = bot.channels.find("name", channelName)
+      if (channel) {
+        channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
+      } else {
+        var channel = bot.channels.find("name", 'general')
+        channel.sendMessage('```-Create Channel-```')
+      }
 }
 
 function alertz() {
@@ -89,7 +100,7 @@ function alertz() {
     }
   }
         
-   if (h == 23 && m == 55) {
+   if (h == 23 && m == 59) {
     var channel = bot.channels.find("name", channelName)
     if (channel) {
       channel.sendMessage('@everyone Test Message to Channel '+channelName+' '+h+':'+m)
