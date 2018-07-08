@@ -50,7 +50,6 @@ function chkchannel(){
         var channel = bot.channels.find("name", 'general')
         channel.sendMessage('```-Create Channel-```')
       } 
-    
 }
 
 function alertz() {
@@ -99,7 +98,7 @@ function alertz() {
     }
   }
         
-   if (h == 23 && m == 59) {
+   if (h == 0 && m == 5) {
     var channel = bot.channels.find("name", channelName)
     if (channel) {
       channel.sendMessage('@everyone Test Message to Channel '+channelName+' '+h+':'+m)
