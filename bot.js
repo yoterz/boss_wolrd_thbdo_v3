@@ -25,18 +25,18 @@ bot.on("message", (msg) => {
         .setTimestamp()  //เวลาด้านล่างสุด
 
         if(channelName) {
-            var channel = bot.channels.find("name", botconfig.channelName)
+            var channel = bot.channels.find("name", channelName)
             channel.sendMessage({embed})
         }
         else msg.channel.sendMessage({embed})
     }
     
     if (msg.content === "```-Create Channel-```") {
-        var channel = bot.channels.find("name", botconfig.channelName)
+        var channel = bot.channels.find("name", channelName)
          if (!channel) {
              console.log('create Channel boss-notifications')
-             msg.guild.createChannel(botconfig.channelName, 'text')   //สร้างห้องง
-             msg.channel.send('```' + 'สร้างห้อง ' + botconfig.channelName + ' เรียบร้อย' + '```')
+             msg.guild.createChannel(channelName, 'text')   //สร้างห้องง
+             msg.channel.send('```' + 'สร้างห้อง ' + channelName + ' เรียบร้อย' + '```')
         }
     }
 
