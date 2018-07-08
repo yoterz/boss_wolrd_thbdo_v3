@@ -91,9 +91,8 @@ function alertz() {
       channel.sendMessage('```-Create Channel-```')
     }
   }
-    
-    
-   if (h == 23 && m == 24) {
+        
+   if (h == 23 && m == 30) {
     var channel = bot.channels.find("name", channelName)
     if (channel) {
       channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
@@ -102,7 +101,6 @@ function alertz() {
       channel.sendMessage('```-Create Channel-```')
     }
   }
-    
     
 }
 
