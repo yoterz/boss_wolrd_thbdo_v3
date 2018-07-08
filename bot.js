@@ -92,10 +92,10 @@ function alertz() {
     }
   }
         
-   if (h == 23 && m == 32) {
+   if (h == 23 && m == 34) {
     var channel = bot.channels.find("name", channelName)
     if (channel) {
-      channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
+      channel.sendMessage('@everyone Test Message to Channel '+channelName)
     } else {
       var channel = bot.channels.find("name", 'general')
       channel.sendMessage('```-Create Channel-```')
