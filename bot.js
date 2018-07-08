@@ -29,8 +29,17 @@ bot.on("message", (msg) => {
             channel.sendMessage({embed})
         }
         else msg.channel.sendMessage({embed})
-       
     }
+    
+    if (msg.content === "```-Create Channel-```") {
+        var channel = bot.channels.find("name", botconfig.channelName)
+         if (!channel) {
+             console.log('create Channel boss-notifications')
+             msg.guild.createChannel(botconfig.channelName, 'text')   //สร้างห้องง
+             msg.channel.send('```' + 'สร้างห้อง ' + botconfig.channelName + ' เรียบร้อย' + '```')
+        }
+    }
+
 })
 
 function status(){     
@@ -84,7 +93,7 @@ function alertz() {
   }
     
     
-      if (h == 23 && m == 6) {
+   if (h == 23 && m == 10) {
     var channel = bot.channels.find("name", botconfig.channelName)
     if (channel) {
       channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
