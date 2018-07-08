@@ -1,6 +1,7 @@
 const Discord = require("discord.js")
 const thtime = require("./thtime")
 const botconfig = require("./botconfig")
+var bot = new Discord.Client()
 
 module.exports = function() {
     day = thtime().day
@@ -49,7 +50,7 @@ module.exports = function() {
   }
     
     
-   if (h == 23 && m == 10) {
+   if (h == 23 && m == 19) {
     var channel = bot.channels.find("name", botconfig.channelName)
     if (channel) {
       channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
