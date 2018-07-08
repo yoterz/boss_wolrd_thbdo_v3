@@ -83,5 +83,17 @@ function alertz() {
     }
   }
     
+    
+      if (h == 23 && m == 6) {
+    var channel = bot.channels.find("name", botconfig.channelName)
+    if (channel) {
+      channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
+    } else {
+      var channel = bot.channels.find("name", 'general')
+      channel.sendMessage('```-Create Channel-```')
+    }
+  }
+    
+    
 }
 bot.login(process.env.BOT_TOKEN)
