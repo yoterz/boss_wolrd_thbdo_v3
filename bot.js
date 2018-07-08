@@ -46,12 +46,11 @@ function status(){
 
 function chkchannel(){
       var channel = bot.channels.find("name", channelName)
-      if (channel) {
-        channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
-      } else {
+      if (!channel) {
         var channel = bot.channels.find("name", 'general')
         channel.sendMessage('```-Create Channel-```')
-      }
+      } 
+    
 }
 
 function alertz() {
