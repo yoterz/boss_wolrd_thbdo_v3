@@ -44,6 +44,7 @@ bot.on("message", (msg) => {
 
 function status(){     
     bot.user.setGame('NEXT '+chkboss().t+' '+chkboss().boss)
+    alertz()
 }
 
 function alertz() {
