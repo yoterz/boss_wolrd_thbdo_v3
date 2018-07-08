@@ -88,7 +88,7 @@ function alertz() {
     }
   }
         
-   if (h == 23 && m == 43) {
+   if (h == 23 && m == 45) {
     var channel = bot.channels.find("name", channelName)
     if (channel) {
       channel.sendMessage('@everyone Test Message to Channel '+channelName+' '+h+':'+m)
