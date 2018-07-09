@@ -30,9 +30,11 @@ bot.on("message", (msg) => {
     
     if (msg.content === "```-Create Channel-```") {
         var channel = bot.channels.find("name", channelName)
-         if (!channel) {
-             msg.guild.createChannel(channelName, 'text')   //สร้างห้องง
+        msg.guild.createChannel(channelName, 'text')   //สร้างห้องง
+         if (channel) {
              msg.channel.send('```' + 'สร้างห้อง ' + channelName + ' เรียบร้อย' + '```')
+         }else{
+             msg.channel.send('```' + 'สร้างห้อง ' + channelName + ' ไม่ได้ กรุณาให้ยศแอดมินกับบอท' + '```')
          }
     }
 
