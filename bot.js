@@ -90,9 +90,13 @@ function alertz() {
     
 }
 
-function sleep(delay) {
-        var start = new Date().getTime();
-        while (new Date().getTime() < start + delay);
-}
+function sleep(milliseconds) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+      if ((new Date().getTime() - start) > milliseconds){
+        break;
+      }
+    }
+  }
 
 bot.login(process.env.BOT_TOKEN)
