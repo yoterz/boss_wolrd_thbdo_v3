@@ -47,7 +47,8 @@ function chkchannel(){
       var channel = bot.channels.find("name", channelName)
       if (!channel) {
         var channel = bot.channels.find("name", 'general')
-        channel.sendMessage('```-Create Channel-```')
+        bot.channels.get(channel.id).send('```-Create Channel-```)
+        //channel.sendMessage('```-Create Channel-```')
       } 
 }
 
