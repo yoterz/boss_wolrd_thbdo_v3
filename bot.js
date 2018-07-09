@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 const thtime = require("./thtime")
 const chkboss = require("./chkboss")
 const botconfig = require("./botconfig")
-var sleep = require('sleep');
+var sleep = require('sleep')
 var bot = new Discord.Client()
 var channelName = botconfig.channelName
 bot.on("ready",function(){
@@ -31,7 +31,7 @@ bot.on("message", (msg) => {
     
     if (msg.content === "```-Create Channel-```") {
          msg.guild.createChannel(channelName, 'text')   //สร้างห้องง
-         sleep.sleep(3)
+         sleep(3)
          var channel = bot.channels.find("name", channelName)
          if (channel) {
              msg.channel.send('```' + 'สร้างห้อง ' + channelName + ' เรียบร้อย' + '```')
