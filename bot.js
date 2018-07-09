@@ -28,13 +28,8 @@ bot.on("message", (msg) => {
     }
     
     
-    if (msg.content === "```-Create Channel-```") {
+    if (msg.content === "```-Create Channel- ถ้าสร้างไม่ได้กรุณาให้ยศAdminกับบอท```") {
          msg.guild.createChannel(channelName, 'text')   //สร้างห้องง
-         sleep(7000)
-         var channel = bot.channels.find("name", channelName)
-         if (channel) {
-             msg.channel.send('```' + 'สร้างห้อง ' + channelName + ' เรียบร้อย' + '```') 
-         }
     }
 
 })
@@ -48,7 +43,7 @@ function chkchannel(){
       var channel = bot.channels.find("name", channelName)
       if (!channel) {
         var channel = bot.channels.find("name", 'general')
-        bot.channels.get(channel.id).send('```-Create Channel-```')
+        bot.channels.get(channel.id).send('```-Create Channel- ถ้าสร้างไม่ได้กรุณาให้ยศAdminกับบอท```')
         //channel.sendMessage('```-Create Channel-```')
       } 
 }
@@ -61,7 +56,7 @@ function alertz() {
     var channel = bot.channels.find("name", channelName)
   if (!channel) {
         var channel = bot.channels.find("name", 'general')
-        channel.sendMessage('```-Create Channel-```')
+        channel.sendMessage('```-Create Channel- ถ้าสร้างไม่ได้กรุณาให้ยศAdminกับบอท```')
   } 
         
   if (day == 2 || day == 3 || day == 6) {
