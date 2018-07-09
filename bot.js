@@ -29,8 +29,8 @@ bot.on("message", (msg) => {
     
     
     if (msg.content === "```-Create Channel-```") {
-        var channel = bot.channels.find("name", channelName)
-        msg.guild.createChannel(channelName, 'text')   //สร้างห้องง
+         msg.guild.createChannel(channelName, 'text')   //สร้างห้องง
+         var channel = bot.channels.find("name", channelName)
          if (channel) {
              msg.channel.send('```' + 'สร้างห้อง ' + channelName + ' เรียบร้อย' + '```')
          }else{
