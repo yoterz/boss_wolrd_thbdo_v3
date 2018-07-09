@@ -32,6 +32,7 @@ bot.on("message", (msg) => {
          msg.guild.createChannel(channelName, 'text')   //สร้างห้องง
          sleep(3000)
          var channel = bot.channels.find("name", channelName)
+         sleep(3000)
          if (channel) {
              msg.channel.send('```' + 'สร้างห้อง ' + channelName + ' เรียบร้อย' + '```')
          }else{
