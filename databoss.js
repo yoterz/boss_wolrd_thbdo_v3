@@ -36,7 +36,7 @@ exports.day4 =
     {
         b00 : ['คูทุม',pic.kutum],
         b10 : ['คจาคาร์',pic.kzarka],
-        b14 : ['คูทุม',pic.kutum],
+        b14 : ['คูทุม,นูเวอร์',pic.noutum],
         b18 : ['คจาคาร์',pic.kzarka]
     }
 
