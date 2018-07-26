@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 const thtime = require("./thtime")
 const chkboss = require("./chkboss")
 const botconfig = require("./botconfig")
-const picz = require("./pic")
+const pic = require("./pic")
 var bot = new Discord.Client()
 var channelName = botconfig.channelName
 bot.on("ready",function(){
@@ -22,7 +22,7 @@ bot.on("message", (msg) => {
         .setColor(0x112263)   //ใส่สี
         .setDescription("วัน  "+thtime().days+"   เวลา   "+"__"+chkboss().t+"__"+"              "+"__**"+chkboss().boss+"**__")   //รายละเอียด
         .setFooter("Boss Timer ThBDO "+botconfig.version+" by ฟูโอ้", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twemoji_1f437.svg/2000px-Twemoji_1f437.svg.png") //รูป ข้อความล่างสุด
-        .setImage("./pic/tableboss.png")     //รูปใหญ่
+        .setImage(pic.tableboss)     //รูปใหญ่
         .setThumbnail(chkboss().imgboss)   //รูปเล็กขวาบนผ
         .setTimestamp()  //เวลาด้านล่างสุดผ
          msg.channel.sendMessage({embed})
