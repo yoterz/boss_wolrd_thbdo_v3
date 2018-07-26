@@ -60,8 +60,8 @@ function alertz() {
         channel.sendMessage('```-Create Channel- ถ้าสร้างไม่ได้กรุณาให้ยศAdminกับบอท```')
   } 
         
-  if (day == 2 || day == 3 || day == 6) {
-    if (h == 23 && m == 45) {
+  if (day == 0 || day == 3 || day == 4) {
+    if (h == 0 && m == 0) {
       channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
     }
   }
