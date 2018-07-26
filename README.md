@@ -5,7 +5,7 @@
 
 ![alt text](https://cdn.discordapp.com/attachments/438242858512941057/465582068542210058/unknown.png)
 
-![alt text](https://cdn.discordapp.com/attachments/465576642518188032/465580201452109844/unknown.png)
+![alt text](https://raw.githubusercontent.com/yoterz/boss_world_thbdo_v3/master/pic/bosstable.png)
 
 
 
