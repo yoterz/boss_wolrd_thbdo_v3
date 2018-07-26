@@ -66,7 +66,7 @@ function alertz() {
     }
   }
     
-  if (day == 0 || day == 1 || day == 4 || day == 5) {
+  if (day == 0 || day == 1 || day == 3 || day == 4 || day == 5) {
     if (h == 9 && m == 45) {
       channel.sendMessage('@everyone '+chkboss().boss+' อีก 15 นาที')
      }
