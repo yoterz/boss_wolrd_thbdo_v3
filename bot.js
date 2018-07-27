@@ -8,7 +8,9 @@ var channelName = botconfig.channelName
 var channelid = botconfig.channelid
 
 bot.on("ready",function(){
-    console.log(channelid)
+    for(i=0; i < channelid.length; i++){
+            console.log(i, channelid[i])
+        }
     console.log("Ready")
     
 })
