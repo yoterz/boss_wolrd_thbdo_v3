@@ -18,7 +18,7 @@ setInterval(()=>alertz(), 60000);
 
 bot.on("message", (msg) => {
     if (msg.content === "บอส"){
-        var dayz = thtime().days+1
+        var dayz = thtime().dayz
         sendEmbed()
       
     }
