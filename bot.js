@@ -69,7 +69,7 @@ function alertz() {
       //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
   }
     //test msg
-    if (h == 17 && m == 27) {
+    if (h == 17 && m == 32) {
       sendallchannel()
      }
    
@@ -81,6 +81,8 @@ function sendallchannel(){    //ส่งทุกห้องที่มีบ
                 if(guild.channels.find("name",channelName)){
                 var channel =  guild.channels.find("name", channelName)
                 channel.send('@everyone ทดสอบส่งข้อความไปทุกห้องที่แอดบอทอยู่ '+chkboss().boss+' อีก 15 นาที')
+                //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
+                 console.log('่ส่งข้อความไปยังทุกๆห้องที่แอดบอทอยู่......ส่งแล้ว')
             }
         })
 }
