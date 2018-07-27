@@ -5,10 +5,9 @@ const botconfig = require("./botconfig")
 const pic = require("./pic")
 var bot = new Discord.Client()
 var channelName = botconfig.channelName
+
 bot.on("ready",function(){
     console.log("Ready")
-    //console.log(chkboss())
-    //console.log(channelName)
 })
 
 setInterval(()=>status(), 10000);
@@ -30,12 +29,9 @@ bot.on("message", (msg) => {
  
 })
 
-
 function status(){     
     bot.user.setGame('NEXT '+chkboss().t+' '+chkboss().boss)
-    chkchannel()
 }
-
 
 function alertz() {
     day = thtime().day
@@ -65,7 +61,6 @@ function alertz() {
   }
    
 }
-
 
 
 bot.login(process.env.BOT_TOKEN)
