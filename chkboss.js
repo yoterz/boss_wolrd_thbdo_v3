@@ -5,6 +5,7 @@ module.exports = function() {
 
     var day = timestart().day
     var h = timestart().h
+    var m = timestart().m
     switch (day) {
     /*อาทิตย์*/   case 0 :
                   if (h == 0 && m < 15){                          //< 00.15 น
