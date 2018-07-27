@@ -67,6 +67,10 @@ function alertz() {
       sendallchannel()
       //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
   }
+    //test msg
+    if (h == 16 && m == 12) {
+      sendallchannel()
+     }
    
 }
 
