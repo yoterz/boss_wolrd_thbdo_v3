@@ -43,27 +43,27 @@ function alertz() {
          
   if (day == 0 || day == 3 || day == 4) {
     if (h == 0 && m == 0) {
-        sendallchannel()
+        sendAllServer()
     }
   }
     
   if (day == 0 || day == 1 || day == 3 || day == 4 || day == 5) {
     if (h == 9 && m == 45) {
-        sendallchannel()
+        sendAllServer()
      }
   }
     
   if (h == 13 && m == 45) {
-      sendallchannel()
+        sendAllServer()
   }
     
   if (h == 17 && m == 45) {
-      sendallchannel()
+        sendAllServer()
   }
        
 }
 
-function sendallchannel(){    //ส่งทุกห้องที่มีบอทอยู่
+function sendAllServer(){    //ส่งทุกห้องที่มีบอทอยู่
            var serverList = bot.guilds.array()
            serverList.forEach(guild => {
                 if(guild.channels.find("name", channelName)){
