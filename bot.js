@@ -8,7 +8,9 @@ var channelName = botconfig.channelName
 var channelid = botconfig.channelid
 
 bot.on("ready",function(){
+    console.log(channelid)
     console.log("Ready")
+    
 })
 
 setInterval(()=>status(), 10000);
