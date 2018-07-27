@@ -62,5 +62,5 @@ function alertz() {
    
 }
 
-
 bot.login(process.env.BOT_TOKEN)
+//bot.login(botconfig.tokenbotdiscord)
