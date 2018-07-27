@@ -18,8 +18,7 @@ setInterval(()=>alertz(), 60000);
 
 bot.on("message", (msg) => {
     if (msg.content === "บอส"){
-        console.log(chkboss().t)
-        if (chkboss().t === '00:15' ){
+        if (chkboss().t === '00:15' ){          //เช็คเวลาบอสตัวต่อไป ถ้าเป็ฯเวลา 00.15 ให้ใช้ วันถัดไป dayz = days[day+1]
             var dayz = thtime().dayz
         }else {
             var dayz = thtime().days
