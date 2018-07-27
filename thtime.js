@@ -6,6 +6,7 @@ module.exports = function (){
     return{
         day : thTimeZone.getDay(),
         days : days[day],
+        dayz : days[day+1],
         d : thTimeZone.getDate(),
         month : thTimeZone.getMonth(),
         year : thTimeZone.getFullYear(),
