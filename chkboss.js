@@ -212,9 +212,9 @@ module.exports = function() {
                              imgboss : databoss.day6.b00[1] }
                   }else if (h == 0 && m >= 15){                   //> 00.15 น - 01.00 น
                     return{
-                             boss : databoss.day6.b00[0],         
-                             t : '00:15',
-                             imgboss : databoss.day6.b00[1] }
+                             boss : databoss.day6.b10[0],         
+                             t : '10:00',
+                             imgboss : databoss.day6.b10[1] }
                   }else if (h >= 1 && h < 10){
                     return{
                              boss : databoss.day6.b10[0],
