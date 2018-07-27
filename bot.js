@@ -16,7 +16,7 @@ setInterval(()=>alertz(), 60000);
 bot.on("message", (msg) => {
     if (msg.content === "บอส"){
        const embed = new Discord.RichEmbed()
-        .setTitle("```css\n"+"บอสตัวต่อไป"+"```")  //หัวข้อ
+        .setTitle("บอสตัวต่อไป")  //หัวข้อ
         .setAuthor("Boss Timer ThBDO", "https://www.picz.in.th/images/2018/06/22/48XhJt.png")  //icon หัวขอ
         .setColor(0x112263)   //ใส่สี
         .setDescription("```md\n"+"วัน "+thtime().days+" เวลา <"+chkboss().t+"> * "+chkboss().boss+" *```")   //รายละเอียด
