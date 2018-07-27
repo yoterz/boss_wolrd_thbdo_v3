@@ -18,10 +18,14 @@ setInterval(()=>alertz(), 60000);
 
 bot.on("message", (msg) => {
     if (msg.content === "บอส"){
-        var dayz = thtime().dayz
+        console.log(chkboss().t)
+        if (chkboss().t === '00:15' ){
+            var dayz = thtime().dayz
+        }else {
+            var dayz = thtime().days
+            }
         sendEmbed()
-      
-    }
+   }
     
     
    function sendEmbed(){
