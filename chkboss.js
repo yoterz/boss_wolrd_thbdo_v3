@@ -68,7 +68,7 @@ module.exports = function() {
                   }else if (h >= 18 && h < 24) {
                     return{
                              boss : databoss.day2.b00[0],          //ตัวของเช้าวัน  อังคาร
-                             t : '00:00',
+                             t : '00:15',
                              imgboss : databoss.day2.b00[1] }
                   }
                   break
@@ -101,7 +101,7 @@ module.exports = function() {
                   }else if (h >= 18 && h < 24) {
                     return{
                              boss : databoss.day3.b00[0],           //ตัวของเช้าวัน  พุธ
-                             t : '00:00',
+                             t : '00:15',
                              imgboss : databoss.day3.b00[1] }
                   }
                   break
@@ -134,7 +134,7 @@ module.exports = function() {
                   }else if (h >= 18 && h < 24) {
                     return{
                              boss : databoss.day4.b00[0],           //ตัวของเช้าวัน  พฤ
-                             t : '00:00',
+                             t : '00:15',
                              imgboss : databoss.day4.b00[1] }
                   }
                   break
@@ -167,7 +167,7 @@ module.exports = function() {
                   }else if (h >= 18 && h < 24) {
                     return{
                              boss : databoss.day5.b00[0],           //ตัวของเช้าวัน ศุกร์
-                             t : '00:00',
+                             t : '00:15',
                              imgboss : databoss.day5.b00[1] }
                   }
                   break
@@ -200,7 +200,7 @@ module.exports = function() {
                   }else if (h >= 18 && h < 24) {
                     return{
                              boss : databoss.day6.b00[0],           //ตัวของเช้าวัน  เสาร์
-                             t : '00:00',
+                             t : '00:15',
                              imgboss : databoss.day6.b00[1] }
                   }
                   break
@@ -233,7 +233,7 @@ module.exports = function() {
                   }else if (h >= 18 && h < 24) {
                     return{
                              boss : databoss.day0.b00[0],           //ตัวของเช้าวัน  อาทิต
-                             t : '00:00',
+                             t : '00:15',
                              imgboss : databoss.day0.b00[1] }
                   }
                   break
