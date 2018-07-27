@@ -8,10 +8,8 @@ var channelName = botconfig.channelName
 var channelid = botconfig.channelid
 
 bot.on("ready",function(){
-    for(i=0; i < channelid.length; i++){
-            console.log(i, channelid[i])
-        }
-    console.log("Ready")
+    console.log(channelid)
+    console.log("Ready.....................")
     
 })
 
@@ -70,7 +68,7 @@ function alertz() {
       //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
   }
     //test msg
-    if (h == 16 && m == 21) {
+    if (h == 16 && m == 26) {
       sendallchannel()
      }
    
