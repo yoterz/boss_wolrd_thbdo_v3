@@ -76,9 +76,9 @@ function alertz() {
 
 function sendallchannel(){
            for(i=0; i < channelid.length; i++){
-                console.log(i, channelid[i])
+                //console.log(i, channelid[i])
                 let msgchannelid = channelid[i]
-                bot.channels.get(msgchannelid).send('@everyone '+chkboss().boss+' อีก 15 นาที')
+                bot.channels.get(msgchannelid).send('@everyone test message'+chkboss().boss+' อีก 15 นาที')
                console.log('send Message to ChannelID : '+ channelid[i])
             }
 }
