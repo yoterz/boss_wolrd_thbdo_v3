@@ -14,9 +14,9 @@ module.exports = function() {
                              imgboss : databoss.day0.b00[1] }
                   }else if (h == 0 && m >= 15){                   //> 00.15 น - 01.00 น
                     return{
-                             boss : databoss.day0.b00[0],         
-                             t : '00:15',
-                             imgboss : databoss.day0.b00[1] }
+                             boss : databoss.day0.b10[0],         
+                             t : '10:00',
+                             imgboss : databoss.day0.b10[1] }
                   }else if (h >= 1 && h < 10){
                     return{
                              boss : databoss.day0.b10[0],
@@ -47,9 +47,9 @@ module.exports = function() {
                              imgboss : databoss.day1.b00[1] }
                   }else if (h == 0 && m >= 15){                   //> 00.15 น - 01.00 น
                     return{
-                             boss : databoss.day1.b00[0],         
-                             t : '00:15',
-                             imgboss : databoss.day1.b00[1] }
+                             boss : databoss.day1.b10[0],         
+                             t : '10:00',
+                             imgboss : databoss.day1.b10[1] }
                   }else if (h >= 1 && h < 10){
                     return{
                              boss : databoss.day1.b10[0],
@@ -80,9 +80,9 @@ module.exports = function() {
                              imgboss : databoss.day2.b00[1] }
                   }else if (h == 0 && m >= 15){                   //> 00.15 น - 01.00 น
                     return{
-                             boss : databoss.day2.b00[0],         
-                             t : '00:15',
-                             imgboss : databoss.day2.b00[1] }   
+                             boss : databoss.day2.b10[0],         
+                             t : '10:00',
+                             imgboss : databoss.day2.b10[1] }   
                   }else if (h >= 1 && h < 10){                      //1.00 - 10.00
                     return{
                              boss : databoss.day2.b10[0],
@@ -113,9 +113,9 @@ module.exports = function() {
                              imgboss : databoss.day3.b00[1] }
                   }else if (h == 0 && m >= 15){                   //> 00.15 น - 01.00 น
                     return{
-                             boss : databoss.day3.b00[0],         
-                             t : '00:15',
-                             imgboss : databoss.day3.b00[1] }
+                             boss : databoss.day3.b10[0],         
+                             t : '10:00',
+                             imgboss : databoss.day3.b10[1] }
                   }else if (h >= 1 && h < 10){
                     return{
                              boss : databoss.day3.b10[0],
@@ -146,9 +146,9 @@ module.exports = function() {
                              imgboss : databoss.day4.b00[1] }
                   }else if (h == 0 && m >= 15){                   //> 00.15 น - 01.00 น
                     return{
-                             boss : databoss.day4.b00[0],         
-                             t : '00:15',
-                             imgboss : databoss.day4.b00[1] }
+                             boss : databoss.day4.b10[0],         
+                             t : '10:00',
+                             imgboss : databoss.day4.b10[1] }
                   }else if (h >= 1 && h < 10){
                     return{
                              boss : databoss.day4.b10[0],
@@ -179,9 +179,9 @@ module.exports = function() {
                              imgboss : databoss.day5.b00[1] }
                   }else if (h == 0 && m >= 15){                   //> 00.15 น - 01.00 น
                     return{
-                             boss : databoss.day5.b00[0],         
-                             t : '00:15',
-                             imgboss : databoss.day5.b00[1] }
+                             boss : databoss.day5.b10[0],         
+                             t : '10:00',
+                             imgboss : databoss.day5.b10[1] }
                   }else if (h >= 1 && h < 10){
                     return{
                              boss : databoss.day5.b10[0],
