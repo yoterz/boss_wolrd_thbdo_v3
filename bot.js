@@ -5,13 +5,10 @@ const botconfig = require("./botconfig")
 const pic = require("./pic")
 var bot = new Discord.Client()
 var channelName = botconfig.channelName
-var channelid = botconfig.channelid
 
 bot.on("ready",function(){
-    console.log(channelid)
     console.log(channelName)
     console.log("Ready.....................")
-    
 })
 
 setInterval(()=>status(), 10000);
@@ -69,20 +66,20 @@ function alertz() {
       //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
   }
     //test msg
-    if (h == 17 && m == 32) {
+    if (h == 17 && m == 35) {
       sendallchannel()
      }
    
 }
 
 function sendallchannel(){    //ส่งทุกห้องที่มีบอทอยู่
-           guildList = bot.guilds.array()
-           guildList.forEach(guild => {
-                if(guild.channels.find("name",channelName)){
+           var serverList = bot.guilds.array()
+           serverList.forEach(guild => {
+                if(guild.channels.find("name", channelName)){
                 var channel =  guild.channels.find("name", channelName)
-                channel.send('@everyone ทดสอบส่งข้อความไปทุกห้องที่แอดบอทอยู่ '+chkboss().boss+' อีก 15 นาที')
-                //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
-                 console.log('่ส่งข้อความไปยังทุกๆห้องที่แอดบอทอยู่......ส่งแล้ว')
+                //channel.send('@everyone ทดสอบส่งข้อความไปทุกห้องที่แอดบอทอยู่ '+chkboss().boss+' อีก 15 นาที')
+                channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
+                console.log('่ส่งข้อความไปยัง :'+serverList)
             }
         })
 }
