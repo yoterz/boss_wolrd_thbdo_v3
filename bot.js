@@ -5,6 +5,7 @@ const botconfig = require("./botconfig")
 const pic = require("./pic")
 var bot = new Discord.Client()
 var channelName = botconfig.channelName
+var channelid = botconfig.channelid
 
 bot.on("ready",function(){
     console.log("Ready")
@@ -39,28 +40,40 @@ function alertz() {
     h = thtime().h
     m = thtime().m
   
-  var channel = bot.channels.find("name", channelName)
+  //var channel = bot.channels.find("name", channelName)
         
   if (day == 0 || day == 3 || day == 4) {
     if (h == 0 && m == 0) {
-      channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
+        sendallchannel()
+        //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
     }
   }
     
   if (day == 0 || day == 1 || day == 3 || day == 4 || day == 5) {
     if (h == 9 && m == 45) {
-      channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
+        sendallchannel()
+      //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
      }
   }
     
   if (h == 13 && m == 45) {
-      channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
+      sendallchannel()
+      //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
   }
     
   if (h == 17 && m == 45) {
-      channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
+      sendallchannel()
+      //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
   }
    
+}
+
+function sendallchannel(){
+           for(i=0; i < channelid.length; i++){
+                console.log(i, channelid[i]);
+                let msgchannelid = channelid[i]
+                bot.channels.get(msgchannelid).send('@everyone '+chkboss().boss+' อีก 15 นาที')
+            }
 }
 
 bot.login(process.env.BOT_TOKEN)
