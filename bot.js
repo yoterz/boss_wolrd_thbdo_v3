@@ -68,19 +68,21 @@ function alertz() {
       //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
   }
     //test msg
-    if (h == 16 && m == 26) {
+    if (h == 17 && m == 26) {
       sendallchannel()
      }
    
 }
 
-function sendallchannel(){
-           for(i=0; i < channelid.length; i++){
-                let msgchannelid = channelid[i]
-                bot.channels.get(msgchannelid).send('@everyone test message หลายห้องพร้อมกัน '+chkboss().boss+' อีก 15 นาที')
-                //bot.channels.get(msgchannelid).send('@everyone '+chkboss().boss+' อีก 15 นาที')
-                console.log('send Message to ChannelID : '+ channelid[i])
+function sendallchannel(){    //ส่งทุกห้องที่มีบอทอยู่
+           guildList = bot.guilds.array()
+           guildList.forEach(guild => {
+                if(guild.channels.find("name",channelName)){
+                    console.log(guild.channels.find("name", channelName))
+                var channel =  guild.channels.find("name", channelName)
+                channel.send('@everyone ทดสอบส่งข้อความไปทุกห้องที่แอดบอทอยู่ '+chkboss().boss+' อีก 15 นาที')
             }
+        })
 }
 
 bot.login(process.env.BOT_TOKEN)
