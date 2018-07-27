@@ -68,7 +68,7 @@ function alertz() {
       //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
   }
     //test msg
-    if (h == 16 && m == 18) {
+    if (h == 16 && m == 21) {
       sendallchannel()
      }
    
@@ -76,10 +76,10 @@ function alertz() {
 
 function sendallchannel(){
            for(i=0; i < channelid.length; i++){
-                //console.log(i, channelid[i])
                 let msgchannelid = channelid[i]
-                bot.channels.get(msgchannelid).send('@everyone test message'+chkboss().boss+' อีก 15 นาที')
-               console.log('send Message to ChannelID : '+ channelid[i])
+                bot.channels.get(msgchannelid).send('@everyone test message หลายห้องพร้อมกัน '+chkboss().boss+' อีก 15 นาที')
+                //bot.channels.get(msgchannelid).send('@everyone '+chkboss().boss+' อีก 15 นาที')
+                console.log('send Message to ChannelID : '+ channelid[i])
             }
 }
 
