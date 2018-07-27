@@ -9,6 +9,7 @@ var channelid = botconfig.channelid
 
 bot.on("ready",function(){
     console.log(channelid)
+    console.log(channelName)
     console.log("Ready.....................")
     
 })
@@ -68,7 +69,7 @@ function alertz() {
       //channel.send('@everyone '+chkboss().boss+' อีก 15 นาที')
   }
     //test msg
-    if (h == 17 && m == 26) {
+    if (h == 17 && m == 27) {
       sendallchannel()
      }
    
@@ -78,7 +79,6 @@ function sendallchannel(){    //ส่งทุกห้องที่มีบ
            guildList = bot.guilds.array()
            guildList.forEach(guild => {
                 if(guild.channels.find("name",channelName)){
-                    console.log(guild.channels.find("name", channelName))
                 var channel =  guild.channels.find("name", channelName)
                 channel.send('@everyone ทดสอบส่งข้อความไปทุกห้องที่แอดบอทอยู่ '+chkboss().boss+' อีก 15 นาที')
             }
