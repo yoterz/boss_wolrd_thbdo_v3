@@ -15,12 +15,11 @@ setInterval(()=>alertz(), 60000);
 
 bot.on("message", (msg) => {
     if (msg.content === "บอส"){
-        var msgz = "วัน  "+thtime().days+"เวลา"+"  "+"__"+chkboss().t+"__"+"    "+"__**"+chkboss().boss+"**__<<"
-        const embed = new Discord.RichEmbed()
+       const embed = new Discord.RichEmbed()
         .setTitle("บอสตัวต่อไป")  //หัวข้อ
         .setAuthor("Boss Timer ThBDO", "https://www.picz.in.th/images/2018/06/22/48XhJt.png")  //icon หัวขอ
         .setColor(0x112263)   //ใส่สี
-        .setDescription(msgz)   //รายละเอียด
+        .setDescription("วัน  "+thtime().days+"เวลา          "+"  "+"__"+chkboss().t+"__"+"                "+"__**"+chkboss().boss+"**__<<")   //รายละเอียด
         .setFooter("Boss Timer ThBDO "+botconfig.version+" by ฟูโอ้", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twemoji_1f437.svg/2000px-Twemoji_1f437.svg.png") //รูป ข้อความล่างสุด
         .setImage(pic.tableboss)     //รูปใหญ่
         .setThumbnail(chkboss().imgboss)   //รูปเล็กขวาบนผ
