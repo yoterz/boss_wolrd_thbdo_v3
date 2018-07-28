@@ -1,7 +1,7 @@
 module.exports = function (){
     currentUtcTime = new Date(); // This is in UTC
     thTimeZone = new Date(currentUtcTime.toLocaleString('en-US', { timeZone: 'Asia/Bangkok' }));
-    days = new Array('อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์')
+    days = new Array('อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์','อาทิตย์')
     day = thTimeZone.getDay()
     return{
         day : thTimeZone.getDay(),
