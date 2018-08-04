@@ -32,12 +32,11 @@ bot.on("message", (msg) => {
    }
     
    if (msg.content === "info"){
-           embedinfo = {
-                    "description": botconfig.botinfo,
-                    "url": "https://discordapp.com",
-                    "color": 7289242
-                     }
-         msg.channel.send(embedinfo)
+             const embedinfo = new Discord.RichEmbed()
+             .setColor(0x086A87)   //ใส่สี
+             .setDescription(botconfig.botinfo)   //รายละเอียด
+             .setTimestamp()  //เวลาด้านล่างสุดผ
+             msg.channel.send({embedinfo})
    }
     
    function sendEmbed(){
