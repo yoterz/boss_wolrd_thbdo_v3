@@ -32,11 +32,11 @@ bot.on("message", (msg) => {
    }
     
    if (msg.content === "info"){
-             const embedinfo = new Discord.RichEmbed()
-             .setColor(0x086A87)   //ใส่สี
-             .setDescription("1. สร้าง Textchannel ชื่อ  boss-notifications\n2. แอดบอท  [คลิกที่นี้](https://discordapp.com/oauth2/authorize?client_id=458615004145385472&scope=bot&permissions)\n-[ดูตารางเวลาบอส คำสั่ง  พิมพ์ ]> บอส\n-[วิธีเชิญและใช้บอท คำสั่ง พิมพ์ ]> info\n-[แจ้งเตือนก่อนบอสเกิด 15 นาที @everyone ไปที่ห้อง boss-notifications]\n-[แสดง เวลาและชื่อบอสตัวต่อไป ที่statusของบอท(ที่รายชื่อด้านขวา)]")   //รายละเอียด
-             .setTimestamp()  //เวลาด้านล่างสุดผ
-             msg.channel.send({embedinfo})
+            "embedinfo": {
+                     "description": "1. สร้าง Textchannel ชื่อ  boss-notifications\n2. แอดบอท  [คลิกที่นี้](https://discordapp.com/oauth2/authorize?client_id=458615004145385472&scope=bot&permissions)\n-[ดูตารางเวลาบอส คำสั่ง  พิมพ์ ]> บอส\n-[วิธีเชิญและใช้บอท คำสั่ง พิมพ์ ]> info\n-[แจ้งเตือนก่อนบอสเกิด 15 นาที @everyone ไปที่ห้อง boss-notifications]\n-[แสดง เวลาและชื่อบอสตัวต่อไป ที่statusของบอท(ที่รายชื่อด้านขวา)]",
+                     "color": 7289242
+                      }
+             msg.channel.send(embedinfo)
    }
     
    function sendEmbed(){
