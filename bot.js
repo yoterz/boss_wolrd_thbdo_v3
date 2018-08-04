@@ -32,7 +32,7 @@ bot.on("message", (msg) => {
    }
     
    if (msg.content === "invitebot"){
-         msg.channel.send(serverListguild)
+         msg.channel.send(botconfig.invitebot)
    }
     
    function sendEmbed(){
