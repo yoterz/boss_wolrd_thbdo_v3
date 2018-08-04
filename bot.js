@@ -32,7 +32,12 @@ bot.on("message", (msg) => {
    }
     
    if (msg.content === "info"){
-         msg.channel.send(botconfig.invitebot)
+           "embed": {
+                    "description": botconfig.botinfo,
+                    "url": "https://discordapp.com",
+                    "color": 7289242
+                     }
+         msg.channel.send(embed)
    }
     
    function sendEmbed(){
