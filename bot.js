@@ -21,11 +21,15 @@ bot.on("message", (msg) => {
         if (chkboss().t === "00:15" ){          //เช็คเวลาบอสตัวต่อไป ถ้าเป็นเวลา 00.15 ให้ใช้ วันถัดไป dayz = days[day+1]
             var dayz = thtime().dayz
         }else {
-            var dayz = thtime().days
+            var dayz = thtime().days            //ถ้าไม่่ใช่ 00.15 ให้ใช้วันของวันนี้
             }
         sendEmbed()
    }
     
+   if (msg.content === "listguild"){
+         var serverListguild = bot.guilds.array()
+         msg.channel.send(serverListguild)
+   }
     
    function sendEmbed(){
         const embed = new Discord.RichEmbed()
@@ -33,7 +37,7 @@ bot.on("message", (msg) => {
         .setAuthor("Boss Timer ThBDO", "https://www.picz.in.th/images/2018/06/22/48XhJt.png")  //icon หัวขอ
         .setColor(0x112263)   //ใส่สี
         .setDescription("```md\n"+"วัน "+dayz+" เวลา<"+chkboss().t+">* "+chkboss().boss+" *```")   //รายละเอียด
-        .setFooter("Boss Timer ThBDO "+botconfig.version+" by ฟูโอ้", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twemoji_1f437.svg/2000px-Twemoji_1f437.svg.png") //รูป ข้อความล่างสุด
+        .setFooter("Boss Timer ThBDO "+botconfig.version, "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twemoji_1f437.svg/2000px-Twemoji_1f437.svg.png") //รูป ข้อความล่างสุด
         .setImage(pic.tableboss)     //รูปใหญ่
         .setThumbnail(chkboss().imgboss)   //รูปเล็กขวาบนผ
         .setTimestamp()  //เวลาด้านล่างสุดผ
