@@ -7,7 +7,7 @@ var bot = new Discord.Client()
 var channelName = botconfig.channelName
 
 bot.on("ready",function(){
-    console.log('ID Channel : '+channelid)
+    console.log('List GUilds : '+bot.guilds.array())
     console.log('Name Channel : '+channelName)
     console.log("Ready.....................")
 })
