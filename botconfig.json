@@ -3,5 +3,5 @@
     "channelName": "boss-notifications",
     "channelid" : [ "","" ],
     "version" : "V3.1.2",
-    "invitebot" : "```1. สร้างtext channelชื่อ    boss-notifications\n2. แอดบอท  https://discordapp.com/oauth2/authorize?client_id=458615004145385472&scope=bot&permissions=0\n-[ดูตารางเวลาบอส คำสั่ง  พิมพ์ ]>    บอส\n-[คำสั่งบอทอื่นๆ  listguild : แสดงรายชื่อserverที่ใช้งานบอท    invitebot : วิธีเชิญและใช้บอท]\n-[บอทจะแจ้งเตือนก่อนบอสเกิด 15 นาที จะส่งข้อความ @everyone คูทุม,นูเวอร์ อีก 15 นาที  ไปที่ห้อง boss-notifications]```"
+    "invitebot" : "```1. สร้างtext channelชื่อ    boss-notifications\n2. แอดบอท  https://discordapp.com/oauth2/authorize?client_id=458615004145385472&scope=bot&permissions=0\n-[ดูตารางเวลาบอส คำสั่ง  พิมพ์ ]>    บอส\n-listguild : แสดงรายชื่อserverที่ใช้งานบอท\n-invitebot : วิธีเชิญและใช้บอท\n-[บอทจะแจ้งเตือนก่อนบอสเกิด 15 นาที จะส่งข้อความ @everyone คูทุม,นูเวอร์ อีก 15 นาที  ไปที่ห้อง boss-notifications]```"
 }
