@@ -31,7 +31,7 @@ bot.on("message", (msg) => {
          msg.channel.send(serverListguild)
    }
     
-   if (msg.content === "invitebot"){
+   if (msg.content === "info"){
          msg.channel.send(botconfig.invitebot)
    }
     
@@ -41,7 +41,7 @@ bot.on("message", (msg) => {
         .setAuthor("Boss Timer ThBDO", "https://www.picz.in.th/images/2018/06/22/48XhJt.png")  //icon หัวขอ
         .setColor(0x112263)   //ใส่สี
         .setDescription("```cs\n"+"วัน "+dayz+" เวลา '"+chkboss().t+"' #"+chkboss().boss+"```")   //รายละเอียด
-        .setFooter("Boss Timer ThBDO "+botconfig.version, "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twemoji_1f437.svg/2000px-Twemoji_1f437.svg.png") //รูป ข้อความล่างสุด
+        .setFooter("Boss Timer ThBDO "+botconfig.version+" พิมพ์ info, "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twemoji_1f437.svg/2000px-Twemoji_1f437.svg.png") //รูป ข้อความล่างสุด
         .setImage(pic.tableboss)     //รูปใหญ่
         .setThumbnail(chkboss().imgboss)   //รูปเล็กขวาบนผ
         .setTimestamp()  //เวลาด้านล่างสุดผ
