@@ -31,6 +31,10 @@ bot.on("message", (msg) => {
          msg.channel.send(serverListguild)
    }
     
+   if (msg.content === "invitebot"){
+         msg.channel.send(serverListguild)
+   }
+    
    function sendEmbed(){
         const embed = new Discord.RichEmbed()
         .setTitle("บอสตัวต่อไป")  //หัวข้อ
