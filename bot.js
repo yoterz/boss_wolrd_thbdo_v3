@@ -5,7 +5,6 @@ const botconfig = require("./botconfig")
 const pic = require("./pic")
 var bot = new Discord.Client()
 var channelName = botconfig.channelName
-var channelid = botconfig.channelid
 
 bot.on("ready",function(){
     console.log('ID Channel : '+channelid)
