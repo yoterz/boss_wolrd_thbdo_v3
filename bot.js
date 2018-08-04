@@ -27,8 +27,8 @@ bot.on("message", (msg) => {
    }
     
    if (msg.content === "listguild"){
-         var serverListguild = bot.guilds.array()
-         msg.channel.send("```css\n"+erverListguild+"```")
+         var serverListguild = "```"+bot.guilds.array()+"```"
+         msg.channel.send(erverListguild)
    }
     
    function sendEmbed(){
