@@ -37,11 +37,11 @@ bot.on("message", (msg) => {
     
    function sendEmbed(){
         const embed = new Discord.RichEmbed()
-        .setTitle("บอสตัวต่อไป")  //หัวข้อ
+        //.setTitle("บอสตัวต่อไป")  //หัวข้อ
         .setAuthor("Boss Timer ThBDO", "https://www.picz.in.th/images/2018/06/22/48XhJt.png")  //icon หัวขอ
         .setColor(0x112263)   //ใส่สี
-        .setDescription("```cs\n"+dayz+" เวลา '"+chkboss().t+"' #"+chkboss().boss+"```")   //รายละเอียด
-        .addField("```cs\n"+"วัน "+dayz+" เวลา '"+chkboss().t+"'"+"```","```cs\n"+"#"+chkboss().boss+"```")
+        //.setDescription("```cs\n"+dayz+" เวลา '"+chkboss().t+"' #"+chkboss().boss+"```")   //รายละเอียด
+        .addField("วัน "+dayz+" เวลา "+chkboss().t,"```cs\n"+"บอสตัวต่อไป #"+chkboss().boss+"```")
         .setFooter("Boss Timer ThBDO "+botconfig.version+" พิมพ์ info", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twemoji_1f437.svg/2000px-Twemoji_1f437.svg.png") //รูป ข้อความล่างสุด
         .setImage(pic.tableboss)     //รูปใหญ่
         .setThumbnail(chkboss().imgboss)   //รูปเล็กขวาบนผ
