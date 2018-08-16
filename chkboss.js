@@ -8,14 +8,19 @@ module.exports = function() {
     var m = timestart().m
     switch (day) {
     /*อาทิตย์*/   case 0 :
-                  if (h == 0 && m < 15){                          //< 00.15 น
+                  if (h == 0 && m < 30){                          //< 00.30 น
                     return{
                              boss : databoss.day0.b00[0],         
-                             t : '00:15',
+                             t : '00:30',
                              imgboss : databoss.day0.b00[1] }
-                  }else if ((h == 0 && m >= 15) || (h >= 1 && h < 10)){                   //> 00.15 น - 10.00 น
+                  }else if ((h == 0 && m >= 30) || (h >= 1 && h < 6)){                   //> 00.30 น - 6.00 น
                     return{
-                             boss : databoss.day0.b10[0],         
+                             boss : databoss.day0.b06[0],         
+                             t : '06:00',
+                             imgboss : databoss.day0.b06[1] }
+                  }else if (h >= 6 && h < 10){
+                    return{
+                             boss : databoss.day0.b10[0],
                              t : '10:00',
                              imgboss : databoss.day0.b10[1] }
                   }else if (h >= 10 && h < 14){
@@ -23,27 +28,37 @@ module.exports = function() {
                              boss : databoss.day0.b14[0],
                              t : '14:00',
                              imgboss : databoss.day0.b14[1] }
-                  }else if (h >= 14 && h < 18){
+                  }else if (h >= 14 && h < 19){
                     return{
-                             boss : databoss.day0.b18[0],
-                             t : '18:00',
-                             imgboss : databoss.day0.b18[1] }
-                  }else if (h >= 18 && h < 24) {
+                             boss : databoss.day0.b19[0],
+                             t : '19:00',
+                             imgboss : databoss.day0.b19[1] }
+                   }else if (h >= 19 && h < 23){
                     return{
-                             boss : databoss.day1.b00[0],         //ตัวของเช้าวัน  จันทร์
-                             t : '00:15',
+                             boss : databoss.day0.b23[0],
+                             t : '23:00',
+                             imgboss : databoss.day0.b23[1] }    
+                  }else if (h == 23) {
+                    return{
+                             boss : databoss.day1.b00[0],         //ตัวของเช้าวันถัดไป
+                             t : '00:30',
                              imgboss : databoss.day1.b00[1] }
                   }
                   break   
     /*จันทร์*/    case 1:
-                if (h == 0 && m < 15){                          //< 00.15 น
+                  if (h == 0 && m < 30){                          //< 00.30 น
                     return{
                              boss : databoss.day1.b00[0],         
-                             t : '00:15',
+                             t : '00:30',
                              imgboss : databoss.day1.b00[1] }
-                  }else if ((h == 0 && m >= 15) || (h >= 1 && h < 10)){                   //> 00.15 น - 10.00 น
+                  }else if ((h == 0 && m >= 30) || (h >= 1 && h < 6)){                   //> 00.30 น - 6.00 น
                     return{
-                             boss : databoss.day1.b10[0],         
+                             boss : databoss.day1.b06[0],         
+                             t : '06:00',
+                             imgboss : databoss.day1.b06[1] }
+                  }else if (h >= 6 && h < 10){
+                    return{
+                             boss : databoss.day1.b10[0],
                              t : '10:00',
                              imgboss : databoss.day1.b10[1] }
                   }else if (h >= 10 && h < 14){
@@ -51,55 +66,75 @@ module.exports = function() {
                              boss : databoss.day1.b14[0],
                              t : '14:00',
                              imgboss : databoss.day1.b14[1] }
-                  }else if (h >= 14 && h < 18){
+                  }else if (h >= 14 && h < 19){
                     return{
-                             boss : databoss.day1.b18[0],
-                             t : '18:00',
-                             imgboss : databoss.day1.b18[1] }
-                  }else if (h >= 18 && h < 24) {
+                             boss : databoss.day1.b19[0],
+                             t : '19:00',
+                             imgboss : databoss.day1.b19[1] }
+                   }else if (h >= 19 && h < 23){
                     return{
-                             boss : databoss.day2.b00[0],          //ตัวของเช้าวัน  อังคาร
-                             t : '00:15',
+                             boss : databoss.day1.b23[0],
+                             t : '23:00',
+                             imgboss : databoss.day1.b23[1] }    
+                  }else if (h == 23) {
+                    return{
+                             boss : databoss.day2.b00[0],         //ตัวของเช้าวันถัดไป
+                             t : '00:30',
                              imgboss : databoss.day2.b00[1] }
                   }
                   break
     /*อังคาร*/   case 2:
-                  if (h == 0 && m < 15){                          //< 00.15 น
+                  if (h == 0 && m < 30){                          //< 00.30 น
                     return{
                              boss : databoss.day2.b00[0],         
-                             t : '00:15',
+                             t : '00:30',
                              imgboss : databoss.day2.b00[1] }
-                  }else if ((h == 0 && m >= 15) || (h >= 1 && h < 10)){                   //> 00.15 น - 01.00 น
+                  }else if ((h == 0 && m >= 30) || (h >= 1 && h < 6)){                   //> 00.30 น - 6.00 น
                     return{
-                             boss : databoss.day2.b10[0],         
+                             boss : databoss.day2.b06[0],         
+                             t : '06:00',
+                             imgboss : databoss.day2.b06[1] }
+                  }else if (h >= 6 && h < 10){
+                    return{
+                             boss : databoss.day2.b10[0],
                              t : '10:00',
-                             imgboss : databoss.day2.b10[1] }   
-                   }else if (h >= 10 && h < 14){
+                             imgboss : databoss.day2.b10[1] }
+                  }else if (h >= 10 && h < 14){
                     return{
                              boss : databoss.day2.b14[0],
                              t : '14:00',
                              imgboss : databoss.day2.b14[1] }
-                  }else if (h >= 14 && h < 18){
+                  }else if (h >= 14 && h < 19){
                     return{
-                             boss : databoss.day2.b18[0],
-                             t : '18:00',
-                             imgboss : databoss.day2.b18[1] }
-                  }else if (h >= 18 && h < 24) {
+                             boss : databoss.day2.b19[0],
+                             t : '19:00',
+                             imgboss : databoss.day2.b19[1] }
+                   }else if (h >= 19 && h < 23){
                     return{
-                             boss : databoss.day3.b00[0],           //ตัวของเช้าวัน  พุธ
-                             t : '00:15',
+                             boss : databoss.day2.b23[0],
+                             t : '23:00',
+                             imgboss : databoss.day2.b23[1] }    
+                  }else if (h == 23) {
+                    return{
+                             boss : databoss.day3.b00[0],         //ตัวของเช้าวันถัดไป
+                             t : '00:30',
                              imgboss : databoss.day3.b00[1] }
                   }
                   break
     /*พุธ*/      case 3 :
-                  if (h == 0 && m < 15){                          //< 00.15 น
+                  if (h == 0 && m < 30){                          //< 00.30 น
                     return{
                              boss : databoss.day3.b00[0],         
-                             t : '00:15',
+                             t : '00:30',
                              imgboss : databoss.day3.b00[1] }
-                  }else if ((h == 0 && m >= 15) || (h >= 1 && h < 10)){                   //> 00.15 น - 10.00 น
+                  }else if ((h == 0 && m >= 30) || (h >= 1 && h < 6)){                   //> 00.30 น - 6.00 น
                     return{
-                             boss : databoss.day3.b10[0],         
+                             boss : databoss.day3.b06[0],         
+                             t : '06:00',
+                             imgboss : databoss.day3.b06[1] }
+                  }else if (h >= 6 && h < 10){
+                    return{
+                             boss : databoss.day3.b10[0],
                              t : '10:00',
                              imgboss : databoss.day3.b10[1] }
                   }else if (h >= 10 && h < 14){
@@ -107,27 +142,37 @@ module.exports = function() {
                              boss : databoss.day3.b14[0],
                              t : '14:00',
                              imgboss : databoss.day3.b14[1] }
-                  }else if (h >= 14 && h < 18){
+                  }else if (h >= 14 && h < 19){
                     return{
-                             boss : databoss.day3.b18[0],
-                             t : '18:00',
-                             imgboss : databoss.day3.b18[1] }
-                  }else if (h >= 18 && h < 24) {
+                             boss : databoss.day3.b19[0],
+                             t : '19:00',
+                             imgboss : databoss.day3.b19[1] }
+                   }else if (h >= 19 && h < 23){
                     return{
-                             boss : databoss.day4.b00[0],           //ตัวของเช้าวัน  พฤ
-                             t : '00:15',
+                             boss : databoss.day3.b23[0],
+                             t : '23:00',
+                             imgboss : databoss.day3.b23[1] }    
+                  }else if (h == 23) {
+                    return{
+                             boss : databoss.day4.b00[0],         //ตัวของเช้าวันถัดไป
+                             t : '00:30',
                              imgboss : databoss.day4.b00[1] }
                   }
                   break
     /*พฤ*/      case 4 :
-                  if (h == 0 && m < 15){                          //< 00.15 น
+                  if (h == 0 && m < 30){                          //< 00.30 น
                     return{
                              boss : databoss.day4.b00[0],         
-                             t : '00:15',
+                             t : '00:30',
                              imgboss : databoss.day4.b00[1] }
-                  }else if ((h == 0 && m >= 15) || (h >= 1 && h < 10)){                   //> 00.15 น - 10.00 น
+                  }else if ((h == 0 && m >= 30) || (h >= 1 && h < 6)){                   //> 00.30 น - 6.00 น
                     return{
-                             boss : databoss.day4.b10[0],         
+                             boss : databoss.day4.b06[0],         
+                             t : '06:00',
+                             imgboss : databoss.day4.b06[1] }
+                  }else if (h >= 6 && h < 10){
+                    return{
+                             boss : databoss.day4.b10[0],
                              t : '10:00',
                              imgboss : databoss.day4.b10[1] }
                   }else if (h >= 10 && h < 14){
@@ -135,27 +180,37 @@ module.exports = function() {
                              boss : databoss.day4.b14[0],
                              t : '14:00',
                              imgboss : databoss.day4.b14[1] }
-                  }else if (h >= 14 && h < 18){
+                  }else if (h >= 14 && h < 19){
                     return{
-                             boss : databoss.day4.b18[0],
-                             t : '18:00',
-                             imgboss : databoss.day4.b18[1] }
-                  }else if (h >= 18 && h < 24) {
+                             boss : databoss.day4.b19[0],
+                             t : '19:00',
+                             imgboss : databoss.day4.b19[1] }
+                   }else if (h >= 19 && h < 23){
                     return{
-                             boss : databoss.day5.b00[0],           //ตัวของเช้าวัน ศุกร์
-                             t : '00:15',
+                             boss : databoss.day4.b23[0],
+                             t : '23:00',
+                             imgboss : databoss.day4.b23[1] }    
+                  }else if (h == 23) {
+                    return{
+                             boss : databoss.day5.b00[0],         //ตัวของเช้าวันถัดไป
+                             t : '00:30',
                              imgboss : databoss.day5.b00[1] }
                   }
                   break
     /*ศุกร์*/     case 5 :
-                  if (h == 0 && m < 15){                          //< 00.15 น
+                  if (h == 0 && m < 30){                          //< 00.30 น
                     return{
                              boss : databoss.day5.b00[0],         
-                             t : '00:15',
+                             t : '00:30',
                              imgboss : databoss.day5.b00[1] }
-                  }else if ((h == 0 && m >= 15) || (h >= 1 && h < 10)){                   //> 00.15 น - 10.00 น
+                  }else if ((h == 0 && m >= 30) || (h >= 1 && h < 6)){                   //> 00.30 น - 6.00 น
                     return{
-                             boss : databoss.day5.b10[0],         
+                             boss : databoss.day5.b06[0],         
+                             t : '06:00',
+                             imgboss : databoss.day5.b06[1] }
+                  }else if (h >= 6 && h < 10){
+                    return{
+                             boss : databoss.day5.b10[0],
                              t : '10:00',
                              imgboss : databoss.day5.b10[1] }
                   }else if (h >= 10 && h < 14){
@@ -163,27 +218,37 @@ module.exports = function() {
                              boss : databoss.day5.b14[0],
                              t : '14:00',
                              imgboss : databoss.day5.b14[1] }
-                  }else if (h >= 14 && h < 18){
+                  }else if (h >= 14 && h < 19){
                     return{
-                             boss : databoss.day5.b18[0],
-                             t : '18:00',
-                             imgboss : databoss.day5.b18[1] }
-                  }else if (h >= 18 && h < 24) {
+                             boss : databoss.day5.b19[0],
+                             t : '19:00',
+                             imgboss : databoss.day5.b19[1] }
+                   }else if (h >= 19 && h < 23){
                     return{
-                             boss : databoss.day6.b00[0],           //ตัวของเช้าวัน  เสาร์
-                             t : '00:15',
+                             boss : databoss.day5.b23[0],
+                             t : '23:00',
+                             imgboss : databoss.day5.b23[1] }    
+                  }else if (h == 23) {
+                    return{
+                             boss : databoss.day6.b00[0],         //ตัวของเช้าวันถัดไป
+                             t : '00:30',
                              imgboss : databoss.day6.b00[1] }
                   }
                   break
     /*เสาร์*/     case 6 :
-                  if (h == 0 && m < 15){                          //< 00.15 น
+                  if (h == 0 && m < 30){                          //< 00.30 น
                     return{
                              boss : databoss.day6.b00[0],         
-                             t : '00:15',
+                             t : '00:30',
                              imgboss : databoss.day6.b00[1] }
-                  }else if ((h == 0 && m >= 15) || (h >= 1 && h < 10)){                   //> 00.15 น - 10.00 น
+                  }else if ((h == 0 && m >= 30) || (h >= 1 && h < 6)){                   //> 00.30 น - 6.00 น
                     return{
-                             boss : databoss.day6.b10[0],         
+                             boss : databoss.day6.b06[0],         
+                             t : '06:00',
+                             imgboss : databoss.day6.b06[1] }
+                  }else if (h >= 6 && h < 10){
+                    return{
+                             boss : databoss.day6.b10[0],
                              t : '10:00',
                              imgboss : databoss.day6.b10[1] }
                   }else if (h >= 10 && h < 14){
@@ -191,15 +256,20 @@ module.exports = function() {
                              boss : databoss.day6.b14[0],
                              t : '14:00',
                              imgboss : databoss.day6.b14[1] }
-                  }else if (h >= 14 && h < 18){
+                  }else if (h >= 14 && h < 19){
                     return{
-                             boss : databoss.day6.b18[0],
-                             t : '18:00',
-                             imgboss : databoss.day6.b18[1] }
-                  }else if (h >= 18 && h < 24) {
+                             boss : databoss.day6.b19[0],
+                             t : '19:00',
+                             imgboss : databoss.day6.b19[1] }
+                   }else if (h >= 19 && h < 23){
                     return{
-                             boss : databoss.day0.b00[0],           //ตัวของเช้าวัน  อาทิต
-                             t : '00:15',
+                             boss : databoss.day6.b23[0],
+                             t : '23:00',
+                             imgboss : databoss.day6.b23[1] }    
+                  }else if (h == 23) {
+                    return{
+                             boss : databoss.day0.b00[0],         //ตัวของเช้าวันถัดไป
+                             t : '00:30',
                              imgboss : databoss.day0.b00[1] }
                   }
                   break
