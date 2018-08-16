@@ -18,10 +18,10 @@ setInterval(()=>alertz(), 60000);
 bot.on("message", (msg) => {
     if (msg.content === "บอส"){
         h = thtime().h
-        if (chkboss().t === "00:30" && h == 23){       //เช็คเวลาบอสตัวต่อไป ถ้าเป็นเวลา 00.15 และ 18-24 น ให้ใชวันพรุ่งนี้
+        if (chkboss().t === "00:30" && h == 23){       //เช็คเวลาบอสตัวต่อไป ถ้าเป็นเวลา 00.30 และ 23 น ให้ใชวันพรุ่งนี้
                 var dayz = thtime().dayz
         }else {
-                var dayz = thtime().days            //ถ้าไม่่ใช่ 00.15 ให้ใช้วันของวันนี้
+                var dayz = thtime().days            //ถ้าไม่่ใช่ 00.30 ให้ใช้วันของวันนี้
             }
         sendEmbed()
    }
