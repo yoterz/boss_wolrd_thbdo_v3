@@ -38,7 +38,7 @@ bot.on("message", (msg) => {
    function sendEmbed(){
         const embed = new Discord.RichEmbed()
         .setTitle("บอสตัวต่อไป")  //หัวข้อ
-        .setAuthor("Boss Timer ThBDO", "https://www.picz.in.th/images/2018/06/22/48XhJt.png")  //icon หัวขอ
+        .setAuthor("Boss Timer ThBDO", "https://cdn.dribbble.com/users/1917659/screenshots/4090454/superman_vector.gif")  //icon หัวขอ
         .setColor(0x112263)   //ใส่สี
         .setDescription("```cs\n"+dayz+" เวลา '"+chkboss().t+"' #"+chkboss().boss+"```")   //รายละเอียด
         .setFooter("Boss Timer ThBDO "+botconfig.version+" พิมพ์ info", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twemoji_1f437.svg/2000px-Twemoji_1f437.svg.png") //รูป ข้อความล่างสุด
