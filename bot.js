@@ -59,13 +59,19 @@ function alertz() {
     h = thtime().h
     m = thtime().m
          
-  if (day == 0 || day == 3 || day == 4) {
-    if (h == 0 && m == 0) {
+  if (day == 0 || day == 1 || day == 2 || day == 3 || day == 4 || day == 6) {
+    if (h == 0 && m == 15) {
         sendAllServer()
     }
   }
     
-  if (day == 0 || day == 1 || day == 3 || day == 4 || day == 5) {
+ if (day == 0 || day == 1 || day == 2 || day == 3 ||  day == 6) {
+    if (h == 5 && m == 45) {
+        sendAllServer()
+    }
+  }
+    
+  if (day == 0 || day == 2 || day == 3 || day == 4 || day == 5 || day == 6 ||) {
     if (h == 9 && m == 45) {
         sendAllServer()
      }
@@ -75,10 +81,14 @@ function alertz() {
         sendAllServer()
   }
     
-  if (h == 17 && m == 45) {
+  if (h == 18 && m == 45) {
         sendAllServer()
   }
-       
+   
+  if (h == 22 && m == 45) {
+        sendAllServer()
+  }
+    
 }
 
 function sendAllServer(){    //ส่งทุกห้องที่มีบอทอยู่
