@@ -71,7 +71,7 @@ function alertz() {
     }
   }
     
-  if (day == 0 || day == 2 || day == 3 || day == 4 || day == 5 || day == 6 ||) {
+  if (day == 0 || day == 2 || day == 3 || day == 4 || day == 5 || day == 6) {
     if (h == 9 && m == 45) {
         sendAllServer()
      }
