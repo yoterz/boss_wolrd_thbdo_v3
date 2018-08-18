@@ -60,7 +60,7 @@ function alertz() {
     h = thtime().h
     m = thtime().m
          
-  if (day == 0 || day == 1 || day == 2 || day == 3 || day == 4 || day == 6) {
+  if (day !== 5) {
     if (h == 0 && m == 15) {
         sendAllServer()
     }
