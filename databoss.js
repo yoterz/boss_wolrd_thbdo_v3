@@ -33,7 +33,7 @@ exports.day2 =
 exports.day3 = 
     {
         b00 : ['คจาคาร์',pic.kzarka],
-        b06 : ['นูเวอร์',pic.nouver],
+        b06 : ['ไม่มี',pic.noboss],
         b10 : ['คจาคาร์',pic.kzarka],
         b14 : ['คารานด้า',pic.karanda],
         b19 : ['คูทุม',pic.kutum],
@@ -43,7 +43,7 @@ exports.day3 =
 exports.day4 = 
     {
         b00 : ['คูทุม',pic.kutum],
-        b06 : ['ไม่มี',pic.noboss],
+        b06 : ['นูเวอร์',pic.nouver],
         b10 : ['คจาคาร์',pic.kzarka],
         b14 : ['คูทุม',pic.kutum],
         b19 : ['คจาคาร์,คารานด้า',pic.karankar],
