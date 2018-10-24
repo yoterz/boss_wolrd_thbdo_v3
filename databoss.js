@@ -47,7 +47,7 @@ exports.day4 =
         b10 : ['คจาคาร์',pic.kzarka],
         b14 : ['คูทุม',pic.kutum],
         b19 : ['คจาคาร์,คารานด้า',pic.karankar],
-        b23 : ['คจาคาร์,นูเวอร์',pic.nouver] 
+        b23 : ['คจาคาร์,นูเวอร์',pic.noukar] 
     }
 
 exports.day5 = 
