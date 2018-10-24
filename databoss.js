@@ -7,7 +7,7 @@ exports.day0 =
         b10 : ['คจาคาร์,คารานด้า',pic.karankar],
         b14 : ['คูทุม,นูเวอร์',pic.noutum],
         b19 : ['คารานด้า',pic.karanda],
-        b23 : ['นูเวอร์',pic.nouver]
+        b23 : ['คูทุม,นูเวอร์',pic.noutum]
     }
 
 exports.day1 = 
@@ -17,7 +17,7 @@ exports.day1 =
         b10 : ['ไม่มี',pic.noboss],
         b14 : ['นูเวอร์',pic.nouver],
         b19 : ['คจาคาร์',pic.kzarka],
-        b23 : ['คูทุม',pic.kutum] 
+        b23 : ['โอฟิน',pic.offin] 
     }
 
 exports.day2 = 
@@ -27,7 +27,7 @@ exports.day2 =
         b10 : ['คจาคาร์,คารานด้า',pic.karankar],
         b14 : ['คูทุม',pic.kutum],
         b19 : ['นูเวอร์',pic.nouver],
-        b23 : ['นูเวอร์',pic.nouver] 
+        b23 : ['คูทุม,นูเวอร์',pic.noutum]
     }
 
 exports.day3 = 
@@ -37,7 +37,7 @@ exports.day3 =
         b10 : ['คจาคาร์',pic.kzarka],
         b14 : ['คารานด้า',pic.karanda],
         b19 : ['คูทุม',pic.kutum],
-        b23 : ['คจาคาร์',pic.kzarka] 
+        b23 : ['โอฟิน',pic.offin] 
     }
 
 exports.day4 = 
@@ -47,22 +47,22 @@ exports.day4 =
         b10 : ['คจาคาร์',pic.kzarka],
         b14 : ['คูทุม',pic.kutum],
         b19 : ['คจาคาร์,คารานด้า',pic.karankar],
-        b23 : ['นูเวอร์',pic.nouver] 
+        b23 : ['คจาคาร์,นูเวอร์',pic.nouver] 
     }
 
 exports.day5 = 
     {
-        b00 : ['ไม่มี',pic.noboss],
+        b00 : ['คจาคาร์',pic.kzarka],
         b06 : ['ไม่มี',pic.noboss],
         b10 : ['คูทุม',pic.kutum],
         b14 : ['คจาคาร์',pic.kzarka],
         b19 : ['นูเวอร์',pic.nouver],
-        b23 : ['คารานด้า',pic.karanda] 
+        b23 : ['โอฟิน',pic.offin] 
     }
  
 exports.day6 = 
     {
-        b00 : ['คูทุม',pic.kutum],
+        b00 : ['คารานด้า',pic.karanda],
         b06 : ['นูเวอร์',pic.nouver],
         b10 : ['คูทุม,คจาคาร์',pic.kuka],
         b14 : ['คารานด้า,นูเวอร์',pic.karanver],
