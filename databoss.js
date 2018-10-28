@@ -2,7 +2,7 @@ const pic = require("./pic")
 
 exports.day0 = 
     {
-        b00 : ['คจาคาร์,คารานด้า',pic.karankar],
+        b00 : ['คารานด้า',pic.karanda],
         b06 : ['คูทุม',pic.kutum],
         b10 : ['คจาคาร์,คารานด้า',pic.karankar],
         b14 : ['คูทุม,นูเวอร์',pic.noutum],
