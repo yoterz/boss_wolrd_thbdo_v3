@@ -33,7 +33,7 @@ bot.on("message", (msg) => {
    }
    
    if (msg.content === "databoss"){
-         var boss00 = "`"+databoss.day0.b00[0]+"`"
+         var boss00 = "`"+databoss.day1.b00[0]+"`  "+"`"+databoss.day2.b00[0]+"`  "+"`"+databoss.day3.b00[0]+"`  "+"`"+databoss.day4.b00[0]+"`  "+"`"+databoss.day5.b00[0]+"`  "+"`"+databoss.day6.b00[0]+"`  "+"`"+databoss.day0.b00[0]+"`  "
          msg.channel.send(boss00)
    }
     
