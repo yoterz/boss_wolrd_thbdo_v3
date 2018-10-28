@@ -1,6 +1,7 @@
 const Discord = require("discord.js")
 const thtime = require("./thtime")
 const chkboss = require("./chkboss")
+const databoss = require("./databoss")
 const botconfig = require("./botconfig")
 const pic = require("./pic")
 var bot = new Discord.Client()
@@ -29,6 +30,11 @@ bot.on("message", (msg) => {
    if (msg.content === "listguild"){
          var serverListguild = "```"+bot.guilds.array()+"```"
          msg.channel.send(serverListguild)
+   }
+   
+   if (msg.content === "databoss"){
+         var databoss = "`databoss.day0.b00[0]`"
+         msg.channel.send(databoss)
    }
     
    if (msg.content === "info"){
