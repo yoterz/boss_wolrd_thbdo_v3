@@ -34,11 +34,11 @@ bot.on("message", (msg) => {
    
    if (msg.content === "databoss"){
          var boss00 = "00.30   "+"`"+databoss.day1.b00[0]+"`  "+"`"+databoss.day2.b00[0]+"`  "+"`"+databoss.day3.b00[0]+"`  "+"`"+databoss.day4.b00[0]+"`  "+"`"+databoss.day5.b00[0]+"`  "+"`"+databoss.day6.b00[0]+"`  "+"`"+databoss.day0.b00[0]+"`  "
-         var boss06 = "\n 06.00   "+"`"+databoss.day1.b06[0]+"`  "+"`"+databoss.day2.b06[0]+"`  "+"`"+databoss.day3.b06[0]+"`  "+"`"+databoss.day4.b06[0]+"`  "+"`"+databoss.day5.b06[0]+"`  "+"`"+databoss.day6.b06[0]+"`  "+"`"+databoss.day0.b06[0]+"`  "
-         var boss10 = "\n 10.00   "+"`"+databoss.day1.b10[0]+"`  "+"`"+databoss.day2.b10[0]+"`  "+"`"+databoss.day3.b10[0]+"`  "+"`"+databoss.day4.b10[0]+"`  "+"`"+databoss.day5.b10[0]+"`  "+"`"+databoss.day6.b10[0]+"`  "+"`"+databoss.day0.b10[0]+"`  "
-         var boss14 = "\n 14.00   "+"`"+databoss.day1.b14[0]+"`  "+"`"+databoss.day2.b14[0]+"`  "+"`"+databoss.day3.b14[0]+"`  "+"`"+databoss.day4.b14[0]+"`  "+"`"+databoss.day5.b14[0]+"`  "+"`"+databoss.day6.b14[0]+"`  "+"`"+databoss.day0.b14[0]+"`  "
-         var boss19 = "\n 19.00   "+"`"+databoss.day1.b19[0]+"`  "+"`"+databoss.day2.b19[0]+"`  "+"`"+databoss.day3.b19[0]+"`  "+"`"+databoss.day4.b19[0]+"`  "+"`"+databoss.day5.b19[0]+"`  "+"`"+databoss.day6.b19[0]+"`  "+"`"+databoss.day0.b19[0]+"`  "
-         var boss23 = "\n 23.00   "+"`"+databoss.day1.b23[0]+"`  "+"`"+databoss.day2.b23[0]+"`  "+"`"+databoss.day3.b23[0]+"`  "+"`"+databoss.day4.b23[0]+"`  "+"`"+databoss.day5.b23[0]+"`  "+"`"+databoss.day6.b23[0]+"`  "+"`"+databoss.day0.b23[0]+"`  "
+         var boss06 = "\n06.00   "+"`"+databoss.day1.b06[0]+"`  "+"`"+databoss.day2.b06[0]+"`  "+"`"+databoss.day3.b06[0]+"`  "+"`"+databoss.day4.b06[0]+"`  "+"`"+databoss.day5.b06[0]+"`  "+"`"+databoss.day6.b06[0]+"`  "+"`"+databoss.day0.b06[0]+"`  "
+         var boss10 = "\n10.00   "+"`"+databoss.day1.b10[0]+"`  "+"`"+databoss.day2.b10[0]+"`  "+"`"+databoss.day3.b10[0]+"`  "+"`"+databoss.day4.b10[0]+"`  "+"`"+databoss.day5.b10[0]+"`  "+"`"+databoss.day6.b10[0]+"`  "+"`"+databoss.day0.b10[0]+"`  "
+         var boss14 = "\n14.00   "+"`"+databoss.day1.b14[0]+"`  "+"`"+databoss.day2.b14[0]+"`  "+"`"+databoss.day3.b14[0]+"`  "+"`"+databoss.day4.b14[0]+"`  "+"`"+databoss.day5.b14[0]+"`  "+"`"+databoss.day6.b14[0]+"`  "+"`"+databoss.day0.b14[0]+"`  "
+         var boss19 = "\n19.00   "+"`"+databoss.day1.b19[0]+"`  "+"`"+databoss.day2.b19[0]+"`  "+"`"+databoss.day3.b19[0]+"`  "+"`"+databoss.day4.b19[0]+"`  "+"`"+databoss.day5.b19[0]+"`  "+"`"+databoss.day6.b19[0]+"`  "+"`"+databoss.day0.b19[0]+"`  "
+         var boss23 = "\n23.00   "+"`"+databoss.day1.b23[0]+"`  "+"`"+databoss.day2.b23[0]+"`  "+"`"+databoss.day3.b23[0]+"`  "+"`"+databoss.day4.b23[0]+"`  "+"`"+databoss.day5.b23[0]+"`  "+"`"+databoss.day6.b23[0]+"`  "+"`"+databoss.day0.b23[0]+"`  "
        msg.channel.send(boss00+boss06+boss10+boss14+boss19+boss23)
    
    }
