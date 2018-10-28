@@ -34,7 +34,17 @@ bot.on("message", (msg) => {
    
    if (msg.content === "databoss"){
          var boss00 = "`"+databoss.day1.b00[0]+"`  "+"`"+databoss.day2.b00[0]+"`  "+"`"+databoss.day3.b00[0]+"`  "+"`"+databoss.day4.b00[0]+"`  "+"`"+databoss.day5.b00[0]+"`  "+"`"+databoss.day6.b00[0]+"`  "+"`"+databoss.day0.b00[0]+"`  "
-         msg.channel.send(boss00)
+         var boss06 = "`"+databoss.day1.b06[0]+"`  "+"`"+databoss.day2.b06[0]+"`  "+"`"+databoss.day3.b06[0]+"`  "+"`"+databoss.day4.b06[0]+"`  "+"`"+databoss.day5.b06[0]+"`  "+"`"+databoss.day6.b06[0]+"`  "+"`"+databoss.day0.b06[0]+"`  "
+         var boss10 = "`"+databoss.day1.b10[0]+"`  "+"`"+databoss.day2.b10[0]+"`  "+"`"+databoss.day3.b10[0]+"`  "+"`"+databoss.day4.b10[0]+"`  "+"`"+databoss.day5.b10[0]+"`  "+"`"+databoss.day6.b10[0]+"`  "+"`"+databoss.day0.b10[0]+"`  "
+         var boss14 = "`"+databoss.day1.b14[0]+"`  "+"`"+databoss.day2.b14[0]+"`  "+"`"+databoss.day3.b14[0]+"`  "+"`"+databoss.day4.b14[0]+"`  "+"`"+databoss.day5.b14[0]+"`  "+"`"+databoss.day6.b14[0]+"`  "+"`"+databoss.day0.b14[0]+"`  "
+         var boss19 = "`"+databoss.day1.b19[0]+"`  "+"`"+databoss.day2.b19[0]+"`  "+"`"+databoss.day3.b19[0]+"`  "+"`"+databoss.day4.b19[0]+"`  "+"`"+databoss.day5.b19[0]+"`  "+"`"+databoss.day6.b19[0]+"`  "+"`"+databoss.day0.b19[0]+"`  "
+         var boss23 = "`"+databoss.day1.b23[0]+"`  "+"`"+databoss.day2.b23[0]+"`  "+"`"+databoss.day3.b23[0]+"`  "+"`"+databoss.day4.b23[0]+"`  "+"`"+databoss.day5.b23[0]+"`  "+"`"+databoss.day6.b23[0]+"`  "+"`"+databoss.day0.b23[0]+"`  "
+       msg.channel.send(boss00)
+       msg.channel.send(boss06)
+       msg.channel.send(boss10)
+       msg.channel.send(boss14)
+       msg.channel.send(boss19)
+       msg.channel.send(boss23)
    }
     
    if (msg.content === "info"){
