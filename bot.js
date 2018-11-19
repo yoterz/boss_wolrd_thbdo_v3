@@ -18,18 +18,6 @@ setInterval(()=>status(), 10000);
 
 bot.on("message", (msg) => {
     
-    if (msg.content === "ลงดัน"){
-            var serverList = bot.guilds.array()
-           serverList.forEach(guild => {
-                if(guild.channels.find("name", channelName)){
-                var channel =  guild.channels.find("name", channelName)
-                channel.send('@ใครจะลงดันทักมา พาลงดันหน่อยครับนะนะนะขอร้องงงงง')
-                console.log('่ส่งข้อความไปยัง :'+serverList)
-            }
-        })
-        
-   }
-    
     if (msg.content === "!บอส"){
         h = thtime().h
         if (chkboss().t === "00:30" && h == 23){       //เช็คเวลาบอสตัวต่อไป ถ้าเป็นเวลา 00.30 และ 23 น ให้ใชวันพรุ่งนี้
