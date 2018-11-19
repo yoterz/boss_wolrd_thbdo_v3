@@ -23,7 +23,7 @@ bot.on("message", (msg) => {
            serverList.forEach(guild => {
                 if(guild.channels.find("name", channelName)){
                 var channel =  guild.channels.find("name", channelName)
-                channel.send('@ฟูโจ#8956 พาลงดันหน่อยครับนะนะนะขอร้องงงงง')
+                channel.send('@ใครจะลงดันทักมา พาลงดันหน่อยครับนะนะนะขอร้องงงงง')
                 console.log('่ส่งข้อความไปยัง :'+serverList)
             }
         })
