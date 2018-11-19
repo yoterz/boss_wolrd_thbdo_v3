@@ -17,7 +17,7 @@ setInterval(()=>status(), 10000);
 //setInterval(()=>alertz(), 60000);
 
 bot.on("message", (msg) => {
-    if (msg.content === "บอส"){
+    if (msg.content === "!บอส"){
         h = thtime().h
         if (chkboss().t === "00:30" && h == 23){       //เช็คเวลาบอสตัวต่อไป ถ้าเป็นเวลา 00.30 และ 23 น ให้ใชวันพรุ่งนี้
                 var dayz = thtime().dayz
