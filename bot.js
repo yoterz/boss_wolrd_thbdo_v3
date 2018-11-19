@@ -19,8 +19,15 @@ setInterval(()=>status(), 10000);
 bot.on("message", (msg) => {
     
     if (msg.content === "ลงดัน"){
-        var channel =  guild.channels.find("name", channelName)
-        channel.send('@ฟูโจ#8956 พาลงดันหน่อยครับนะนะนะขอร้องงงงง')
+            var serverList = bot.guilds.array()
+           serverList.forEach(guild => {
+                if(guild.channels.find("name", channelName)){
+                var channel =  guild.channels.find("name", channelName)
+                channel.send('@ฟูโจ#8956 พาลงดันหน่อยครับนะนะนะขอร้องงงงง')
+                console.log('่ส่งข้อความไปยัง :'+serverList)
+            }
+        })
+        
    }
     
     if (msg.content === "!บอส"){
