@@ -19,7 +19,7 @@ setInterval(()=>status(), 10000);
 bot.on("message", (msg) => {
     
     if (msg.content === "ลงดัน"){
-        msg.channel.send("@ฟูโอ้ พาลงดันหน่อยครับ นะนะนะขอร้องงงงง")
+        msg.channel.send("@ฟูโจ#8956 พาลงดันหน่อยครับนะนะนะขอร้องงงงง")
    }
     
     if (msg.content === "!บอส"){
