@@ -14,7 +14,7 @@ bot.on("ready",function(){
 })
 
 setInterval(()=>status(), 10000);
-setInterval(()=>alertz(), 60000);
+//setInterval(()=>alertz(), 60000);
 
 bot.on("message", (msg) => {
     if (msg.content === "บอส"){
@@ -64,7 +64,8 @@ bot.on("message", (msg) => {
 })
 
 function status(){     
-    bot.user.setGame('NEXT '+chkboss().t+' '+chkboss().boss)
+    bot.user.setGame("Ragnarok M: Eternal Love")
+    //bot.user.setGame('NEXT '+chkboss().t+' '+chkboss().boss)
 }
 
 function alertz() {
