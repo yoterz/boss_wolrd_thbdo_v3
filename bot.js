@@ -19,7 +19,8 @@ setInterval(()=>status(), 10000);
 bot.on("message", (msg) => {
     
     if (msg.content === "ลงดัน"){
-        channel.send('@ใครจะลงดันทักมา พาลงดันหน่อยครับนะนะนะขอร้องงงงง')
+        var channel =  guild.channels.find("name", channelName)
+        channel.send('@ฟูโจ#8956 พาลงดันหน่อยครับนะนะนะขอร้องงงงง')
    }
     
     if (msg.content === "!บอส"){
