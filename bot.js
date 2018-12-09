@@ -28,6 +28,14 @@ bot.on("message", (msg) => {
         sendEmbed()
    }
     
+  if (msg.content === "60"){
+         msg.channel.send("https://cdn.discordapp.com/attachments/521213560500649988/521213594830897152/60.png")
+   }
+    
+  if (msg.content === "80"){
+         msg.channel.send("https://cdn.discordapp.com/attachments/521213560500649988/521213608697397250/80-03_12_61.png")
+   }
+    
    if (msg.content === "listguild"){
          var serverListguild = "```"+bot.guilds.array()+"```"
          msg.channel.send(serverListguild)
