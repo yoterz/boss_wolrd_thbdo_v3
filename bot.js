@@ -29,7 +29,7 @@ bot.on("message", (msg) => {
    }
     
   if (msg.content === "40"){
-         msg.channel.send("https://cdn.discordapp.com/attachments/521213560500649988/521499396781899797/unknown.png")
+         msg.channel.send("https://cdn.discordapp.com/attachments/521213560500649988/521504479078645773/40.png")
    }
   if (msg.content === "60"){
          msg.channel.send("https://cdn.discordapp.com/attachments/521213560500649988/521499029171863595/unknown.png")
