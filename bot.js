@@ -36,7 +36,7 @@ bot.on("message", (msg) => {
    }
     
   if (msg.content === "80"){
-         msg.channel.send("ยังไม่มี")
+         msg.channel.send("https://cdn.discordapp.com/attachments/521213560500649988/521678792432025611/80.png")
    }
     
    if (msg.content === "listguild"){
