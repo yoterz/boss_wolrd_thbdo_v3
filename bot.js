@@ -39,7 +39,7 @@ bot.on("message", (msg) => {
          msg.channel.send("ยังไม่มี")
    }
    if (msg.content === "100"){
-         msg.channel.send("หอ 100 ชั้น \n70>>TH14 Orc Hero X 2 \n80>>ID68 Orc Hero,Bloody Knight \n90>>CN2 Orc Lord,Doppelganger")
+         msg.channel.send("`หอ 100 ชั้น` \n`70>>TH14 Orc Hero X 2` \n`80>>ID68 Orc Hero,Bloody Knight` \n`90>>CN2 Orc Lord,Doppelganger`")
    }
     
    if (msg.content === "listguild"){
