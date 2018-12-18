@@ -38,6 +38,9 @@ bot.on("message", (msg) => {
   if (msg.content === "80"){
          msg.channel.send("ยังไม่มี")
    }
+   if (msg.content === "100"){
+         msg.channel.send("หอ 100 ชั้น \n70>>TH14 Orc Hero X 2 \n80>>ID68 Orc Hero,Bloody Knight \n90>>CN2 Orc Lord,Doppelganger")
+   }
     
    if (msg.content === "listguild"){
          var serverListguild = "```"+bot.guilds.array()+"```"
