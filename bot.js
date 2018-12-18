@@ -29,7 +29,7 @@ bot.on("message", (msg) => {
    }
     
   if (msg.content === "40"){
-         msg.channel.send("ยังไม่มี")
+         msg.channel.send("บอสไม่ตรงตามนี้นะ \nhttps://cdn.discordapp.com/attachments/521213560500649988/524543083317297153/unknown.png")
    }
   if (msg.content === "60"){
          msg.channel.send("https://cdn.discordapp.com/attachments/521213560500649988/524032413354164224/unknown.png")
