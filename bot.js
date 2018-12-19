@@ -36,7 +36,7 @@ bot.on("message", (msg) => {
    }
     
   if (msg.content === "80"){
-         msg.channel.send("ยังไม่มี")
+         msg.channel.send("https://cdn.discordapp.com/attachments/521213560500649988/524891696815669249/unknown.png")
    }
    if (msg.content === "100"){
          msg.channel.send("`หอ 100 ชั้น` \n`70>>TH14 Orc Hero X 2` \n`80>>ID68 Orc Hero,Bloody Knight` \n`90>>CN2 Orc Lord,Doppelganger`")
