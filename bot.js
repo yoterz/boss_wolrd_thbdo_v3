@@ -37,8 +37,14 @@ bot.on("message", (msg) => {
       var PicRo = pic.lv80
          sendEmbed(PicRo)
    }
+    
    if (msg.content === "100"){
        msg.channel.send(pic.lv100)
+   }
+    
+    if (msg.content === "เบีย"){
+       var PicRo = pic.beer
+         sendEmbed(PicRo)
    }
     
    if (msg.content === "listguild"){
