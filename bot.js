@@ -43,7 +43,8 @@ bot.on("message", (msg) => {
    }
     
     if (msg.content === "เบีย"){
-       var PicRo = pic.beer
+         titel = "Fujosy"
+         PicRo = randompicz.beer().beerz
          sendEmbed(PicRo)
    }
     
