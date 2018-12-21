@@ -16,3 +16,15 @@ exports.beer = function () {
 }
 
 
+exports.nest = function () {
+    number = 3
+    var random = Math.floor(Math.random() * (number - 1 + 1))
+    var nestpic = [
+        'https://f.ptcdn.info/904/017/000/1397744420-1025543567-o.jpg',
+        'https://image.dek-d.com/27/0573/2645/t_121928659',
+        'https://f.ptcdn.info/210/025/000/1415098773-2-o.png']
+
+    return {
+        nestz: nestpic[random]
+    }
+}
