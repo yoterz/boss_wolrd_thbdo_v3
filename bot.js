@@ -38,8 +38,7 @@ bot.on("message", (msg) => {
          sendEmbed(PicRo)
    }
    if (msg.content === "100"){
-       var PicRo = pic.lv100
-         sendEmbed(PicRo)
+       msg.channel.send(pic.lv100)
    }
     
    if (msg.content === "listguild"){
