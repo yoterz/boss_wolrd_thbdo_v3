@@ -43,7 +43,11 @@ bot.on("message", (msg) => {
        msg.channel.send(pic.lv100)
    }
     
-    if (msg.content === "เบีย"){
+   if (msg.content === "เบีย"){
+         PicRo = randompicz.beer().beerz
+         sendEmbed(PicRo)
+   }
+   if (msg.content === "เบียร์"){
          PicRo = randompicz.beer().beerz
          sendEmbed(PicRo)
    }
