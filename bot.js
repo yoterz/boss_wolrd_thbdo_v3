@@ -3,6 +3,7 @@ const thtime = require("./thtime")
 const chkboss = require("./chkboss")
 const databoss = require("./databoss")
 const botconfig = require("./botconfig")
+const randompicz = require('./randompicz.js')
 const pic = require("./pic")
 var bot = new Discord.Client()
 var channelName = botconfig.channelName
