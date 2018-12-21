@@ -51,18 +51,12 @@ bot.on("message", (msg) => {
          PicRo = randompicz.beer().beerz
          sendEmbed(PicRo)
    }
+    
    if (msg.content === "เนส") {
-    PicRo = randompicz.nest().nestz
-    sendembed(PicRo)
+         PicRo = randompicz.nest().nestz
+         sendembed(PicRo)
   }
-   if (msg.content === "เนต") {
-    PicRo = randompicz.nest().nestz
-    sendembed(PicRo)
-  }
-  if (msg.content === "nest") {
-    PicRo = randompicz.nest().nestz
-    sendembed(PicRo)
-  }
+
     
    if (msg.content === "listguild"){
          var serverListguild = "```"+bot.guilds.array()+"```"
