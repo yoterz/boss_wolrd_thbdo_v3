@@ -43,7 +43,6 @@ bot.on("message", (msg) => {
    }
     
     if (msg.content === "เบีย"){
-         var titel = "Fujosy"
          PicRo = randompicz.beer().beerz
          sendEmbed(PicRo)
    }
@@ -70,7 +69,7 @@ bot.on("message", (msg) => {
     
    function sendEmbed(PicRo){
         const embed = new Discord.RichEmbed()
-        .setTitle(titel)  //หัวข้อ
+       // .setTitle(titel)  //หัวข้อ
         //.setAuthor("Boss Timer ThBDO", "https://www.picz.in.th/images/2018/06/22/48XhJt.png")  //icon หัวขอ
         .setColor(0x112263)   //ใส่สี
         //.setDescription("```cs\n วัน '"+dayz+"'  เวลา '"+chkboss().t+"' น. \n\n ####  "+chkboss().boss+"  ####```")   //รายละเอียด
