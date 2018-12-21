@@ -19,22 +19,27 @@ setInterval(()=>status(), 10000);
 bot.on("message", (msg) => {
     
     if (msg.content === "บอส"){
-        sendEmbed()
+        var PicRo = pic.bossro
+        sendEmbed(PicRo)
         //msg.channel.send("https://cdn.discordapp.com/attachments/518946182345523379/525615515230797834/unknown.png")
    }
     
   if (msg.content === "40"){
-         msg.channel.send(pic.lv40)
+      var PicRo = pic.lv40
+         sendEmbed(PicRo)
    }
   if (msg.content === "60"){
-         msg.channel.send(pic.lv60)
+      var PicRo = pic.lv60
+         sendEmbed(PicRo)
    }
     
   if (msg.content === "80"){
-         msg.channel.send(pic.lv80)
+      var PicRo = pic.lv80
+         sendEmbed(PicRo)
    }
    if (msg.content === "100"){
-         msg.channel.send(pic.lv100)
+       var PicRo = pic.lv100
+         sendEmbed(PicRo)
    }
     
    if (msg.content === "listguild"){
@@ -57,7 +62,7 @@ bot.on("message", (msg) => {
             msg.channel.send(botconfig.invitebot)
    }
     
-   function sendEmbed(){
+   function sendEmbed(PicRo){
         const embed = new Discord.RichEmbed()
         //.setTitle("__*บอสตัวต่อไป*__")  //หัวข้อ
         //.setAuthor("Boss Timer ThBDO", "https://www.picz.in.th/images/2018/06/22/48XhJt.png")  //icon หัวขอ
@@ -65,7 +70,7 @@ bot.on("message", (msg) => {
         //.setDescription("```cs\n วัน '"+dayz+"'  เวลา '"+chkboss().t+"' น. \n\n ####  "+chkboss().boss+"  ####```")   //รายละเอียด
        // .addField("วัน "+dayz+" เวลา "+chkboss().t,"```cs\n"+"บอสตัวต่อไป #"+chkboss().boss+"```")
        // .setFooter("Boss Timer ThBDO "+botconfig.version+" พิมพ์ info", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twemoji_1f437.svg/2000px-Twemoji_1f437.svg.png") //รูป ข้อความล่างสุด
-       .setImage(pic.bossro)     //รูปใหญ่
+       .setImage(PicRo)     //รูปใหญ่
        // .setThumbnail(chkboss().imgboss)   //รูปเล็กขวาบนผ
         .setTimestamp()  //เวลาด้านล่างสุดผ
          msg.channel.send({embed})
