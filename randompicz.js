@@ -10,7 +10,7 @@ exports.beer = function () {
         'https://image.dek-d.com/27/0434/7120/119154500']
 
     return {
-        beerz: beerpic[random],
+        beerz: beerpic[random]
        
     }
 }
