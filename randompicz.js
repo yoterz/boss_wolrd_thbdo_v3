@@ -2,12 +2,12 @@ exports.beer = function () {
     number = 6
     var random = Math.floor(Math.random() * (number - 1 + 1))
     var beerpic = [
-        'https://stickershop.line-scdn.net/stickershop/v1/product/1258914/LINEStorePC/main@2x.png;compress=true?__=20161019',
-        'https://stickershop.line-scdn.net/stickershop/v1/product/1259989/LINEStorePC/main@2x.png;compress=true?__=20161019',
+        'https://cdn.discordapp.com/attachments/465750861579288587/525627239115784197/main.png',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGAxVHSKW7zKxlQjdA1NE00BgR_SispGoGjyjuaviljXF-IYJmdA',
         'https://pbs.twimg.com/profile_images/424938578376810496/dyNkHXXz.jpeg',
-        'https://stickershop.line-scdn.net/stickershop/v1/product/1021012/LINEStorePC/main@2x.png;compress=true',
-        'https://stickershop.line-scdn.net/stickershop/v1/product/1306903/LINEStorePC/main@2x.png;compress=true?__=20161019',
-        'https://stickershop.line-scdn.net/stickershop/v1/product/1228769/LINEStorePC/main@2x.png;compress=true']
+        'http://ku.90sjimg.com/element_origin_min_pic/17/01/08/70105c609446edc0d5a8349f420b8969.jpg',
+        'https://pbs.twimg.com/profile_images/973582277228707840/LfFKfxKs_400x400.jpg',
+        'https://image.dek-d.com/27/0434/7120/119154500']
 
     return {
         beerz: beerpic[random],
