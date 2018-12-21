@@ -54,7 +54,15 @@ bot.on("message", (msg) => {
     
    if (msg.content === "เนส") {
          PicRo = randompicz.nest().nestz
-         sendembed(PicRo)
+         sendEmbed(PicRo)
+  }
+       if (msg.content === "เนต") {
+         PicRo = randompicz.nest().nestz
+         sendEmbed(PicRo)
+  }
+       if (msg.content === "เนท") {
+         PicRo = randompicz.nest().nestz
+         sendEmbed(PicRo)
   }
 
     
