@@ -19,7 +19,8 @@ setInterval(()=>status(), 10000);
 bot.on("message", (msg) => {
     
     if (msg.content === "บอส"){
-        msg.channel.send("https://cdn.discordapp.com/attachments/518946182345523379/525615515230797834/unknown.png")
+        sendEmbed()
+        //msg.channel.send("https://cdn.discordapp.com/attachments/518946182345523379/525615515230797834/unknown.png")
    }
     
   if (msg.content === "40"){
@@ -58,14 +59,14 @@ bot.on("message", (msg) => {
     
    function sendEmbed(){
         const embed = new Discord.RichEmbed()
-        .setTitle("__*บอสตัวต่อไป*__")  //หัวข้อ
-        .setAuthor("Boss Timer ThBDO", "https://www.picz.in.th/images/2018/06/22/48XhJt.png")  //icon หัวขอ
+        //.setTitle("__*บอสตัวต่อไป*__")  //หัวข้อ
+        //.setAuthor("Boss Timer ThBDO", "https://www.picz.in.th/images/2018/06/22/48XhJt.png")  //icon หัวขอ
         .setColor(0x112263)   //ใส่สี
-        .setDescription("```cs\n วัน '"+dayz+"'  เวลา '"+chkboss().t+"' น. \n\n ####  "+chkboss().boss+"  ####```")   //รายละเอียด
+        //.setDescription("```cs\n วัน '"+dayz+"'  เวลา '"+chkboss().t+"' น. \n\n ####  "+chkboss().boss+"  ####```")   //รายละเอียด
        // .addField("วัน "+dayz+" เวลา "+chkboss().t,"```cs\n"+"บอสตัวต่อไป #"+chkboss().boss+"```")
-        .setFooter("Boss Timer ThBDO "+botconfig.version+" พิมพ์ info", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twemoji_1f437.svg/2000px-Twemoji_1f437.svg.png") //รูป ข้อความล่างสุด
-        .setImage(pic.tableboss)     //รูปใหญ่
-        .setThumbnail(chkboss().imgboss)   //รูปเล็กขวาบนผ
+       // .setFooter("Boss Timer ThBDO "+botconfig.version+" พิมพ์ info", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twemoji_1f437.svg/2000px-Twemoji_1f437.svg.png") //รูป ข้อความล่างสุด
+       .setImage(pic.bossro)     //รูปใหญ่
+       // .setThumbnail(chkboss().imgboss)   //รูปเล็กขวาบนผ
         .setTimestamp()  //เวลาด้านล่างสุดผ
          msg.channel.send({embed})
    }
