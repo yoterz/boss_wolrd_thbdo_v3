@@ -11,32 +11,8 @@ exports.beer = function () {
 
     return {
         beerz: beerpic[random],
-        yoz: yo[random]
+       
     }
 }
 
-exports.yo = function () {
-    number = 3
-    var random = Math.floor(Math.random() * (number - 1 + 1))
-    var yopic = [
-        'https://stickershop.line-scdn.net/stickershop/v1/product/4456/LINEStorePC/main@2x.png;compress=true',
-        'https://stickershop.line-scdn.net//stickershop/v1/product/9032/iphone/main@2x.png',
-        'https://f.ptcdn.info/375/039/000/o15vuwahkJhKBjhuSLr-o.jpg']
 
-    return {
-        yoz: yopic[random]
-    }
-}
-
-exports.nest = function () {
-    number = 3
-    var random = Math.floor(Math.random() * (number - 1 + 1))
-    var nestpic = [
-        'https://f.ptcdn.info/904/017/000/1397744420-1025543567-o.jpg',
-        'https://image.dek-d.com/27/0573/2645/t_121928659',
-        'https://f.ptcdn.info/210/025/000/1415098773-2-o.png']
-
-    return {
-        nestz: nestpic[random]
-    }
-}
