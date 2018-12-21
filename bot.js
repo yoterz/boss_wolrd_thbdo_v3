@@ -33,7 +33,7 @@ bot.on("message", (msg) => {
          msg.channel.send("https://cdn.discordapp.com/attachments/521213560500649988/524891696815669249/unknown.png")
    }
    if (msg.content === "100"){
-         msg.channel.send("`หอ 100 ชั้น` \n`70>>TH14 Orc Hero X 2` \n`80>>ID68 Orc Hero,Bloody Knight` \n`90>>CN2  Orc Lord,Doppelganger`")
+         msg.channel.send("`หอ 100 ชั้น 17-23 ธ.ค.61` \n`70>>TH14 Orc Hero X 2` \n`80>>ID68 Orc Hero,Bloody Knight` \n`90>>CN2  Orc Lord,Doppelganger`")
    }
     
    if (msg.content === "listguild"){
