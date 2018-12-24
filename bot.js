@@ -40,7 +40,8 @@ bot.on("message", (msg) => {
    }
     
    if (msg.content === "100"){
-       msg.channel.send(pic.lv100)
+       var PicRo = pic.lv100
+         sendEmbed(PicRo)
    }
     
    if (msg.content === "เบีย"){
