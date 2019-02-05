@@ -44,24 +44,24 @@ bot.on("message", (msg) => {
          sendEmbed(PicRo)
    }
     
-   if (msg.content === "เบีย"){
+   if (msg.content === "++เบีย"){
          PicRo = randompicz.beer().beerz
          sendEmbed(PicRo)
    }
-   if (msg.content === "เบียร์"){
+   if (msg.content === "++เบียร์"){
          PicRo = randompicz.beer().beerz
          sendEmbed(PicRo)
    }
     
-   if (msg.content === "เนส") {
+   if (msg.content === "++เนส") {
          PicRo = randompicz.nest().nestz
          sendEmbed(PicRo)
   }
-       if (msg.content === "เนต") {
+       if (msg.content === "++เนต") {
          PicRo = randompicz.nest().nestz
          sendEmbed(PicRo)
   }
-       if (msg.content === "เนท") {
+       if (msg.content === "++เนท") {
          PicRo = randompicz.nest().nestz
          sendEmbed(PicRo)
   }
