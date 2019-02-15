@@ -15,7 +15,7 @@ bot.on("ready",function(){
     console.log("Ready.....................")
 })
 
-setInterval(()=>status(), 10000);
+setInterval(()=>status(), 60000);
 //setInterval(()=>alertz(), 60000);
 
 bot.on("message", (msg) => {
