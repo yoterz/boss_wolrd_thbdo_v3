@@ -108,7 +108,7 @@ function status(){
     bot.user.setGame("Ragnarok M: Eternal Love")
     //bot.user.setGame('NEXT '+chkboss().t+' '+chkboss().boss)
     m = m+1
-     bot.channels.get(channelID).send(m+"  ไหนเตะซิ")
+     //bot.channels.get(channelID).send(m+"  ไหนเตะซิ")
 }
 
 function alertz() {
