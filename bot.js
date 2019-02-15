@@ -7,6 +7,7 @@ const randompicz = require('./randompicz.js')
 const pic = require("./pic")
 var bot = new Discord.Client()
 var channelName = botconfig.channelName
+var channelID = '467004079101706252'
 var m = 0
 bot.on("ready",function(){
     console.log('List GUilds : '+bot.guilds.array())
@@ -107,7 +108,7 @@ function status(){
     bot.user.setGame("Ragnarok M: Eternal Love")
     //bot.user.setGame('NEXT '+chkboss().t+' '+chkboss().boss)
     m = m+1
-     bot.channels.get(467004079101706252).send(m+"  ไหนเตะซิ")
+     bot.channels.get(channelID).send(m+"  ไหนเตะซิ")
 }
 
 function alertz() {
